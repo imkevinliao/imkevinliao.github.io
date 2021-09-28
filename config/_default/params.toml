@@ -44,17 +44,20 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 # title = "Linkedin"
 # url = "https://de.linkedin.com/"
 
+# [[socialIcons]]
+# icon = "fab fa-instagram"
+# title = "instagram"
+# url = "https://www.instagram.com/"
+
+[[socialIcons]]
+icon = "fab fa-weixin"
+title = "Wechat"
+url = "https://u.wechat.com/MJDtzlyO9eNzFTXaSqK5pac"
 
 [[socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/imkevinliao/blog"
-
-
-# [[socialIcons]]
-# icon = "fab fa-instagram"
-# title = "instagram"
-# url = "https://www.instagram.com/"
 
 
 [[socialIcons]]
