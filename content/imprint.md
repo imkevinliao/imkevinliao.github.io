@@ -2,6 +2,6 @@
 
 Information in accordance with the applicable law
 
-kevin liao\
+Kevin Liao\
 2016 GoHugo\
 
