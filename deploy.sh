@@ -11,4 +11,5 @@ echo "==============================="
 
 cd public/ && git add . && git commit -m "." 
 git push origin master:public
+# 第一次部署出错请使用下面的命令:
 # git push -u origin master:public -f
