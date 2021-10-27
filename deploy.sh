@@ -21,3 +21,4 @@ git push origin master:public
 # The file will have its original line endings in your working directory
 # git config --global core.autocrlf true
 # git config --global core.safecrlf true
+# 如果后面Git提交出现 fatal: LF would be replaced by CRLF那还是git config --global core.autocrlf false吧
