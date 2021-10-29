@@ -17,10 +17,10 @@
   url = "/about/"
 
   [[main]]
-  name = "Contact"
+  name = "Connect"
   weight = 400
-  identifier = "contact"
-  url = "/contact/"
+  identifier = "connect"
+  url = "/connect/"
 
   [[footer]]
   name = "imprint"
