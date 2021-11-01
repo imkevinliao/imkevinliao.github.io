@@ -23,7 +23,7 @@ listDateFormat = "2006/1/2"
 # Commento Comments
 # CommentoURL = "https://commento.example.com/js/commento.js"
 # Read More links for truncated summaries
-# readMore = true
+readMore = true
 # postSectionName = "blog"
 
 
