@@ -3,7 +3,7 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 title = ""
 theme = "anatole"
-summarylength = 10
+summarylength = 20
 enableEmoji = true
 enableRobotsTXT = true
 
