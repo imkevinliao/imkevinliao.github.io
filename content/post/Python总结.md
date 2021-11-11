@@ -10,6 +10,7 @@ draft: false
 ------------------
 
 # 代理的写法
+```
 import urllib.request as request
 import requests
 proxies = {
@@ -29,7 +30,9 @@ print(response.read().decode())
 print('--------------使用requests--------------')
 response = requests.get(google_url, proxies=proxies)
 print(response.status_code)
-# 正则的使用 
+```
+# 正则的使用
+``` 
 第一种:
 import re
 m_str=r"http://img.itmtu.com/mm/d/dounianglishi/NO.011/0003.jpg"
@@ -51,7 +54,9 @@ if m1:
         print(m)
 else:
     print('No match')
-# 文件流 open 
+```
+# 文件流 open
+```
 f = open("test.txt",'a+',encoding='utf-8')
 line = f.readline()
 while line:
@@ -59,13 +64,17 @@ while line:
     line = f.readline()
 f.close()
 补充说明:open方式打开文件最少需要路径一个参数即可.
+```
 # 获取for循环中数组序列下标的获取
+```
 a=list['yi','er','san','si','wu']
 for index,var in enumerate(a,1):
     print(var)
     print(index)
 补充说明:enumerat(a,1)中的1指的是下标从1开始,不写则默认下标从0开始,index为下标.
+```
 # requests的常用方法
+```
 import requests
 response = requests.get(url, headers=headers, verify=False, proxies=None, timeout=5)
 if response.status_code == 200
@@ -73,11 +82,15 @@ if response.status_code == 200
 enconding = requests.utils.get_encodings_from_content(response.text)
 html=response.content.decode(enconding[0])
 补充说明:response.text或response.content.decode('utf-8')都可以.
+```
 # Lxml 
+```
 from lxml import etree,html
 tree=etree.HTML(response.text)
 title=tree.xpath('//*[@id="content"]/div/div/div[1]/h3/text()')
+```
 # BeautifulSoup
+```
 from bs4 import BeautifulSoup
 from lxml import etree
 html=response.text
@@ -87,7 +100,9 @@ titles=soup.find_all('h1',attrs={'class':'entry-title'})
 text=soup.find('h1',attrs={'class':'entry-title'})
 for title in titles:
     print(title.get_text())
+```
 # 连接数据库 mysql
+```
 connect = pymysql.Connect(
     host='localhost',
     port=3306,
@@ -136,7 +151,9 @@ else:
     print('事务处理成功', cursor.rowcount)
 cursor.close()
 connect.close()
+```
 # selenium
+```
 from selenium import webdriver
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException #隐式等待
@@ -167,7 +184,9 @@ until里面是期待出现的条件,最好用try,except. 所有的期待方法�
 element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "myDynamicElement")) 
 wait = WebDriverWait(driver, 10), element = wait.until(element_has_css_class((By.ID, 'myNewInput'), "myCSSClass"))
 wait = WebDriverWait(driver, 10), element = wait.until(EC.element_to_be_clickable((By.ID, 'someid')))
+```
 # log 日志
+```
 import logging
 logging.basicConfig(level = logging.DEBUG,format = '%(asctime)s - %(name)s -%(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s') 
 filename=r'my.log'
@@ -178,4 +197,5 @@ logging.info(u"执行打印功能")
 logging.warning(u"警告")
 logging.error(u"错误")
 logging.critical(u"致命错误")
+```
 补充说明:logging.basicConfig里面的level设置输出日记等级,logging.NOTSET为全输出,logging.INFO不会输出DEBUG级别的内容.filename='mylog.log'加上这个设置就会输出到文件中.
