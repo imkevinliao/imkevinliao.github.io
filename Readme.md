@@ -1,4 +1,3 @@
-Temp
 在空文件夹下使用Git Bash窗口执行下面的克隆命令。   
 ```
 git clone git@github.com:imkevinliao/imkevinliao.github.io.git ./
