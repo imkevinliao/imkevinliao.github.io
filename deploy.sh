@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 git status
 
 read -p "input commit for this push:" commit
