@@ -8,5 +8,5 @@ Linux 服务器下：chmod +x init.sh write.sh deploy.sh
 > 
 > ./write.sh 写文章脚本
 > 
-> ./deploy.sh 部署到服务器脚本
+> ./deploy.sh 部署到服务器脚本   
 本地预览命令`hugo server` 
