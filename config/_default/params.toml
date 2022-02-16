@@ -20,6 +20,7 @@ doNotLoadAnimations = false
 singleDateFormat = "2006/01/02"
 indexDateFormat = "2006/01/02"
 listDateFormat = "2006/01/02"
+#date formate
 # Commento Comments
 # CommentoURL = "https://commento.example.com/js/commento.js"
 # Read More links for truncated summaries
