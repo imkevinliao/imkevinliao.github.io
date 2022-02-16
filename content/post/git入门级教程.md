@@ -32,6 +32,9 @@ draft: false
 23. git branch branchname 切换分支(切换分支时，本地工作区，仓库都会相应切换到对应分支的内容)。
 24. git branch -D branchname 强制删除一个本地分支，即使包含未合并更改的分支。
 
+# git log 美化
+`git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+
 git revert命令用来撤销某个已经提交的快照（和 reset 重置到某个指定版本不一样）。它是在提交记录最后面加上一个撤销了更改的新提交，而不是从项目历史中移除这个提交，这避免了 Git 丢失项目历史。  
 撤销（revert）应该用在你想要在项目历史中移除某个提交的时候。比如说，你在追踪一个 bug，然后你发现它是由一个提交造成的，这时候撤销就很有用。  
 撤销（revert）被设计为撤销公共提交的安全方式，重设（reset）被设计为重设本地更改。
