@@ -8,6 +8,17 @@
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>markdown私人语法</title>
+      <link>https://example.com/post/markdown%E7%A7%81%E4%BA%BA%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Wed, 16 Feb 2022 21:16:14 +0800</pubDate>
+      
+      <guid>https://example.com/post/markdown%E7%A7%81%E4%BA%BA%E8%AF%AD%E6%B3%95/</guid>
+      
+        <description>markdown语法 代码高亮可以指定编程语言，也可以不指定</description>
+      
+    </item>
+    
+    <item>
       <title>Install NextCloud on Ubuntu 20.04 with Nginx </title>
       <link>https://example.com/post/install-nextcloud-on-ubuntu-20.04-with-nginx/</link>
       <pubDate>Tue, 15 Feb 2022 21:16:59 +0800</pubDate>
@@ -257,6 +268,28 @@
       <guid>https://example.com/post/python3install/</guid>
       
         <description>CentOS7:</description>
+      
+    </item>
+    
+    <item>
+      <title>为什么我坚定不移地抵制百度</title>
+      <link>https://example.com/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%9D%9A%E5%AE%9A%E4%B8%8D%E7%A7%BB%E5%9C%B0%E6%8A%B5%E5%88%B6%E7%99%BE%E5%BA%A6/</link>
+      <pubDate>Sat, 23 Jan 2021 17:57:51 +0800</pubDate>
+      
+      <guid>https://example.com/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%9D%9A%E5%AE%9A%E4%B8%8D%E7%A7%BB%E5%9C%B0%E6%8A%B5%E5%88%B6%E7%99%BE%E5%BA%A6/</guid>
+      
+        <description>source from:internet</description>
+      
+    </item>
+    
+    <item>
+      <title>Scrapy</title>
+      <link>https://example.com/post/scrapy_code_review/</link>
+      <pubDate>Sat, 19 Dec 2020 21:30:26 +0800</pubDate>
+      
+      <guid>https://example.com/post/scrapy_code_review/</guid>
+      
+        <description>Scrapy创建项目:</description>
       
     </item>
     
