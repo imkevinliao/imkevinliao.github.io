@@ -33,7 +33,28 @@ draft: false
 24. git branch -D branchname 强制删除一个本地分支，即使包含未合并更改的分支。
 
 ## git log 美化
-`git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+`git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+
+```
+git log --pretty=format:" "
+控制显示的记录格式，常用的格式占位符写法及其代表的意义如下：
+选项 说明
+%H   提交对象（commit）的完整哈希字串
+%h    提交对象的简短哈希字串
+%T    树对象（tree）的完整哈希字串
+%t    树对象的简短哈希字串
+%P    父对象（parent）的完整哈希字串
+%p    父对象的简短哈希字串
+%an   作者（author）的名字
+%ae   作者的电子邮件地址
+%ad   作者修订日期（可以用 -date= 选项定制格式）
+%ar   作者修订日期，按多久以前的方式显示
+%cn   提交者(committer)的名字
+%ce   提交者的电子邮件地址
+%cd   提交日期
+%cr   提交日期，按多久以前的方式显示
+%s    提交说明
+```
 
 ## git 乱码问题
 依次是文件提交编码格式,log输出的编码格式,界面编码格式：
