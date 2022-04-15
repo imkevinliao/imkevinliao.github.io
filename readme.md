@@ -10,3 +10,6 @@ Linux 服务器下：chmod +x init.sh write.sh deploy.sh
 > ./deploy.sh 部署到服务器脚本  
  
 本地预览命令`hugo server` 
+
+# 补充
+原来在windows上工作，后来转到linux，所以进行了一次修改（windows和linux回车换行问题修改了脚本）。hugo.exe也不再需了
