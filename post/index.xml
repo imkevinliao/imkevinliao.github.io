@@ -6,7 +6,18 @@
     <description>Recent content in Posts on My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Feb 2022 21:16:14 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 22:35:16 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>commands</title>
+      <link>https://example.com/post/commands/</link>
+      <pubDate>Fri, 15 Apr 2022 22:35:16 +0800</pubDate>
+      
+      <guid>https://example.com/post/commands/</guid>
+      
+        <description>windows and linux command linux command Q:How can I list all human users that I&amp;rsquo;ve created?</description>
+      
+    </item>
+    
     <item>
       <title>markdown私人语法</title>
       <link>https://example.com/post/markdown%E7%A7%81%E4%BA%BA%E8%AF%AD%E6%B3%95/</link>
