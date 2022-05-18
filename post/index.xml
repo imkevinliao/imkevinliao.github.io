@@ -6,7 +6,18 @@
     <description>Recent content in Posts on imkevinliao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 May 2022 23:12:48 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 23:41:41 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v2ray_linux_client</title>
+      <link>https://example.com/post/v2ray_linux_client/</link>
+      <pubDate>Wed, 18 May 2022 23:41:41 +0800</pubDate>
+      
+      <guid>https://example.com/post/v2ray_linux_client/</guid>
+      
+        <description>v2ray 作为神一样的工具，始于2015年9月18日，可以毫不夸张的说，我是与它一起长大的。在那个还没有v2ray的时代，ss和ssr还在互相争执，各执己见。以前一直用ssr，后来听说ssr的流量特征已经被防火墙识别，基本上无效后，就开始接触到了v2ray。</description>
+      
+    </item>
+    
     <item>
       <title>记录vscode远程连接问题</title>
       <link>https://example.com/post/%E8%AE%B0%E5%BD%95vscode%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/</link>
