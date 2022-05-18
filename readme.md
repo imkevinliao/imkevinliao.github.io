@@ -13,3 +13,5 @@ Linux 服务器下：chmod +x init.sh write.sh deploy.sh
 
 # 补充
 原来在windows上工作，后来转到linux，所以进行了一次修改（windows和linux回车换行问题修改了脚本）。hugo.exe也不再需了
+
+Debian and Ubuntu Install Hugo `sudo apt-get install hugo`
