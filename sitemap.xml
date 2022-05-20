@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.com/post/filebrowser/</loc>
+    <lastmod>2022-05-20T10:06:28+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/post/</loc>
-    <lastmod>2022-05-18T23:41:41+08:00</lastmod>
+    <lastmod>2022-05-20T10:06:28+08:00</lastmod>
   </url>
   
   <url>
