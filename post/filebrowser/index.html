@@ -79,7 +79,7 @@
 <meta name="twitter:image" content="https://example.com/images/site-feature-image.png"/>
 
 <meta name="twitter:title" content="filebrowser"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="序章 filebrowser 定位应该算是一款轻量级云盘，全平台通用，当然我肯定是以Linux为主。"/>
 
 
 
@@ -100,7 +100,7 @@
         "alternativeHeadline": "",
         "description": "
       
-        
+        序章 filebrowser 定位应该算是一款轻量级云盘，全平台通用，当然我肯定是以Linux为主。
 
 
       
@@ -155,7 +155,7 @@
 
     ,
         "url" : "https:\/\/example.com\/post\/filebrowser\/",
-        "wordCount" : "0",
+        "wordCount" : "157",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -334,11 +334,77 @@
               </span
             >
             <em class="fas fa-stopwatch"></em>
-            <span class="reading-time">0-minute read</span>
+            <span class="reading-time">One-minute read</span>
           </div>
 
         
-      </div></div>
+      </div><h1 id="序章">序章</h1>
+<p>filebrowser 定位应该算是一款轻量级云盘，全平台通用，当然我肯定是以Linux为主。</p>
+<h1 id="安装">安装</h1>
+<p>filebrowser的安装可以说很简单，但是我却卡了很久，排查问题是件很费精力的事情呐。（我的问题是服务器提供商有防火墙，导致端口未开放）<br>
+<code>curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</code></p>
+<h1 id="部署">部署</h1>
+<p>安装完成后，并不能直接食用，还需要一些操作。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">filebrowser -d /etc/filebrowser.db config init
+filebrowser -d /etc/filebrowser.db config set --address 0.0.0.0
+filebrowser -d /etc/filebrowser.db config set --port 8088
+</code></pre></div><p>在进行了如上的配置后，就可以启动啦</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">filebrowser -d /etc/filebrowser.db
+</code></pre></div><p>这里对上述命令做一些大白话解析，-d /etc/filebrowser.db 意思是指定数据库的路径，如果直接使用filebrowser启动将会默认在当前执行该命令的路径下生成filebrowser.db，可以认为是做了filebrowser config init操作。</p>
+<p>如果上述命令执行过程中有问题，可以检查是否是权限问题导致的，sudo提权。</p>
+<h1 id="检查端口问题">检查端口问题</h1>
+<p>首先排查是否是本机的防火墙状态，sudo ufw status<br>
+其次去服务器提供商那里看看防火墙状态，简单的方式就是telnet测试。本机使用telnet + ip + port。例如检测8080端口就是 telnet 123.456.789 8080，telnet 123.456.789 22；ip是服务器的ip地址，可以检测该端口是否可以正常访问，通常22端口肯定是开放的，毕竟是ssh端口。如果端口无法访问，则去服务器提供商那里操作下，把防火墙打开。</p>
+<h1 id="进阶">进阶</h1>
+<p>我们当然不会指望，每次都filebrowser -d /etc/filebrowser.db以这种方式启动，并且服务器重启那不就又得去操作一下？这显然是不能忍受的。我们要让它自动启动。</p>
+<p>编写service文件，复制以下内容，简要说明ExecStart=/usr/local/bin/filebrowser -d /etc/filebrowser.db，这个根据你filebrowser的实际位置填写。（另自行查找vim的基本使用）</p>
+<p>sudo vim /usr/lib/systemd/system/filebrowser.service</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[Unit]
+Description=File browser
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/filebrowser -d /etc/filebrowser.db
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div><p>这样子就算是大公告成了，然后我们就可以愉快的使用filebrowser了。使用下面的方式启动，停止，查看filebrowser的状态。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl start filebrowser
+sudo systemctl stop filebrowser
+sudo systemctl status filebrowser
+#开机启动
+sudo systemctl enable filebrowser.service
+</code></pre></div><h1 id="尾声">尾声</h1>
+<p>如果你乐意当然还可以设置日志位置：filebrowser -d /etc/filebrowser.db config set &ndash;log /var/log/filebrowser.log</p>
+<p>添加一个用户：filebrowser -d /etc/filebrowser.db users add 填用户名 填密码 &ndash;perm.admin</p>
+<p>设置语言环境：filebrowser -d /etc/filebrowser.db config set &ndash;locale zh-cn</p>
+<p>当然这些也可以在你登录之后，在图形化界面去设置。</p>
+<h1 id="疑惑">疑惑</h1>
+<p>当我一开始在网上查找教程的时候总是能看到下面这种，其实就是另外一种方式罢了，仅供参考。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">vi /etc/filebrowser/config.json
+filebrowser -c config.json
+{
+　　&#34;port&#34;: 8090,
+　　&#34;address&#34;: &#34;0.0.0.0&#34;,
+　　&#34;noAuth&#34;: false,
+　　&#34;password&#34;:&#34;12345678&#34;,
+　　&#34;root&#34;:&#34;/data/fbroot&#34;,
+　　&#34;alternativeReCaptcha&#34;: false,
+　　&#34;reCaptchaKey&#34;: &#34;&#34;,
+　　&#34;reCaptchaSecret&#34;: &#34;&#34;,
+　　&#34;database&#34;:&#34;/etc/filebrowser/filebrowser.db&#34;,
+　　&#34;log&#34;:&#34;/var/log/filebrowser.log&#34;,
+　　&#34;plugin&#34;: &#34;&#34;,
+　　&#34;baseURL&#34;: &#34;/filebrowser&#34;,
+　　&#34;allowCommands&#34;: true,
+　　&#34;allowEdit&#34;: true,
+　　&#34;allowNew&#34;: true,
+　　&#34;commands&#34;: [
+　　　　&#34;ls&#34;,
+　　　　&#34;df&#34;
+　　]
+}
+</code></pre></div></div>
     <div class="post-footer">
       <div class="info">
         
