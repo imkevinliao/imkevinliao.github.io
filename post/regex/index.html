@@ -79,7 +79,7 @@
 <meta name="twitter:image" content="https://example.com/images/site-feature-image.png"/>
 
 <meta name="twitter:title" content="regex"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="正则 正则的概念是很早很早以前就接触过的，但是并没有实际使用。记忆中开始实际使用的时候，似乎是我开始写java的时候。至于为什么使用正则，真的是忘了，但是我清楚的记得当时有一个东西无法匹配，我折腾了很久也无可奈何，最后还是找大佬指点了一下，我才豁然开朗。至此，我记住了全部匹配的\s\S，也是从那个时候开始正式接触正则的概念：零宽断言。我当时兴致勃勃的要深入理解正则表达式，达到随意写的状态，但是大佬一句话，正则表达式用的时候网上搜一下就行，没必要记。毕竟，你要匹配的很多网上的表达式写的都很好了，自己写还烂。"/>
 
 
 
@@ -100,7 +100,7 @@
         "alternativeHeadline": "",
         "description": "
       
-        
+        正则 正则的概念是很早很早以前就接触过的，但是并没有实际使用。记忆中开始实际使用的时候，似乎是我开始写java的时候。至于为什么使用正则，真的是忘了，但是我清楚的记得当时有一个东西无法匹配，我折腾了很久也无可奈何，最后还是找大佬指点了一下，我才豁然开朗。至此，我记住了全部匹配的\\s\\S，也是从那个时候开始正式接触正则的概念：零宽断言。我当时兴致勃勃的要深入理解正则表达式，达到随意写的状态，但是大佬一句话，正则表达式用的时候网上搜一下就行，没必要记。毕竟，你要匹配的很多网上的表达式写的都很好了，自己写还烂。
 
 
       
@@ -155,7 +155,7 @@
 
     ,
         "url" : "https:\/\/example.com\/post\/regex\/",
-        "wordCount" : "0",
+        "wordCount" : "168",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -334,11 +334,54 @@
               </span
             >
             <em class="fas fa-stopwatch"></em>
-            <span class="reading-time">0-minute read</span>
+            <span class="reading-time">One-minute read</span>
           </div>
 
         
-      </div></div>
+      </div><h1 id="正则">正则</h1>
+<p>正则的概念是很早很早以前就接触过的，但是并没有实际使用。记忆中开始实际使用的时候，似乎是我开始写java的时候。至于为什么使用正则，真的是忘了，但是我清楚的记得当时有一个东西无法匹配，我折腾了很久也无可奈何，最后还是找大佬指点了一下，我才豁然开朗。至此，我记住了全部匹配的\s\S，也是从那个时候开始正式接触正则的概念：零宽断言。我当时兴致勃勃的要深入理解正则表达式，达到随意写的状态，但是大佬一句话，正则表达式用的时候网上搜一下就行，没必要记。毕竟，你要匹配的很多网上的表达式写的都很好了，自己写还烂。</p>
+<p>如今回看当初，只觉得好笑。初见正则，很多东西都搞不清楚，如search，findall，断言，匹配开头，匹配结尾，贪婪模式，非贪婪模式，匹配次数。大概是没有老师指点吧，现在回看觉得简单的东西，当时却折腾了很久，以至于当时气馁的感觉至今仍然能有些许感受。</p>
+<p>人生不也是如此吗？在人生的某个节点上，我们感到无比痛苦，我们感到无可奈何，我们对自己无能而产生愤怒，产生痛苦。在那个时刻，我们备受煎熬，可，一旦往事随风后，再回头看，似乎也没什么大不了，不就是&hellip;&hellip;</p>
+<h1 id="反复温习">反复温习</h1>
+<p>正则表达式一段时间不使用后，就容易被遗忘。所以谨以这短短的几行文字做记录，以便后续快速回忆。</p>
+<h2 id="参考链接">参考链接：</h2>
+<p><a href="https://www.jb51.net/tools/regex.htm">https://www.jb51.net/tools/regex.htm</a><br>
+<a href="https://www.runoob.com/w3cnote/reg-lookahead-lookbehind.html">https://www.runoob.com/w3cnote/reg-lookahead-lookbehind.html</a></p>
+<h2 id="python代码">Python代码</h2>
+<div class="highlight"><pre class="chroma"><code class="language-Python3" data-lang="Python3"><span class="k">def</span> <span class="nf">regular_assertion</span><span class="p">():</span>
+    <span class="n">m_str</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;regex represents regular expression&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;match str：</span><span class="si">{m_str}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">m_str</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="c1"># 正向先行断言 负向先行断言 正向后行断言 负向后行断言</span>
+    <span class="n">reg</span> <span class="o">=</span> <span class="p">[</span><span class="sa">r</span><span class="s1">&#39;re(?=gular)&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;re(?!g)&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;(?&lt;=\w)re&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;(?&lt;!\w)re&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">匹配规则：</span><span class="si">{reg[i]}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">reg</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">m_str</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;匹配结果:&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">_</span><span class="o">.</span><span class="n">group</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;; &#39;</span>  
+</code></pre></div><p>打印结果：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">match str：regex represents regular expression
+0r 1e 2g 3e 4x 5  6r 7e 8p 9r 10e 11s 12e 13n 14t 15s 16  17r 18e 19g 20u 21l 22a 23r 24  25e 26x 27p 28r 29e 30s 31s 32i 33o 34n 
+匹配规则：re(?=gular)
+匹配结果:
+&lt;re.Match object; span=(17, 19), match=&#39;re&#39;&gt; re; 
+匹配规则：re(?!g)
+匹配结果:
+&lt;re.Match object; span=(6, 8), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(9, 11), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(28, 30), match=&#39;re&#39;&gt; re; 
+匹配规则：(?&lt;=\w)re
+匹配结果:
+&lt;re.Match object; span=(9, 11), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(28, 30), match=&#39;re&#39;&gt; re; 
+匹配规则：(?&lt;!\w)re
+匹配结果:
+&lt;re.Match object; span=(0, 2), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(6, 8), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(17, 19), match=&#39;re&#39;&gt; re; 
+</code></pre></div><h1 id="结语">结语</h1>
+<p>子曰，温故而知新，诚不欺我</p>
+</div>
     <div class="post-footer">
       <div class="info">
         
