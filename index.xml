@@ -8,6 +8,17 @@
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Python优雅之道 基础</title>
+      <link>https://example.com/post/python%E4%BC%98%E9%9B%85%E4%B9%8B%E9%81%93-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Tue, 14 Jun 2022 18:55:28 +0800</pubDate>
+      
+      <guid>https://example.com/post/python%E4%BC%98%E9%9B%85%E4%B9%8B%E9%81%93-%E5%9F%BA%E7%A1%80/</guid>
+      
+        <description>Python优雅之道-基础 输入n组数据，每组数据以空格分割，存于数组中</description>
+      
+    </item>
+    
+    <item>
       <title>regex</title>
       <link>https://example.com/post/regex/</link>
       <pubDate>Mon, 13 Jun 2022 16:51:37 +0800</pubDate>
