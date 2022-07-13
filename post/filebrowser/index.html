@@ -155,7 +155,7 @@
 
     ,
         "url" : "https:\/\/example.com\/post\/filebrowser\/",
-        "wordCount" : "157",
+        "wordCount" : "178",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -342,12 +342,15 @@
 <p>filebrowser 定位应该算是一款轻量级云盘，全平台通用，当然我肯定是以Linux为主。</p>
 <h1 id="安装">安装</h1>
 <p>filebrowser的安装可以说很简单，但是我却卡了很久，排查问题是件很费精力的事情呐。（我的问题是服务器提供商有防火墙，导致端口未开放）<br>
-<code>curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</code></p>
+<code>curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash</code> <br>
+安装这部分需要提示的是，国内的如果因为网络原因无法使用脚本的话也没有关系，直接在本地下载这个文件（链接可能存在更新，不保证有效）：https://github.com/filebrowser/filebrowser/releases/download/v2.22.3/linux-amd64-filebrowser.tar.gz
+简单来讲就是直接下载压缩包，然后拷贝到远程服务器上，tar -xzvf linux-amd64-filebrowser.tar.gz,会解压出几个文件，只需要把解压出来的filebrowser复制到/usr/local/bin/ 就好了，提示权限问题，请使用root用户或者sudo提权。
+安装</p>
 <h1 id="部署">部署</h1>
 <p>安装完成后，并不能直接食用，还需要一些操作。</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">filebrowser -d /etc/filebrowser.db config init
-filebrowser -d /etc/filebrowser.db config set --address 0.0.0.0
-filebrowser -d /etc/filebrowser.db config set --port 8088
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo filebrowser -d /etc/filebrowser.db config init
+sudo filebrowser -d /etc/filebrowser.db config set --address 0.0.0.0
+sudo filebrowser -d /etc/filebrowser.db config set --port 8088
 </code></pre></div><p>在进行了如上的配置后，就可以启动啦</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">filebrowser -d /etc/filebrowser.db
 </code></pre></div><p>这里对上述命令做一些大白话解析，-d /etc/filebrowser.db 意思是指定数据库的路径，如果直接使用filebrowser启动将会默认在当前执行该命令的路径下生成filebrowser.db，可以认为是做了filebrowser config init操作。</p>
@@ -375,8 +378,10 @@ sudo systemctl status filebrowser
 #开机启动
 sudo systemctl enable filebrowser.service
 </code></pre></div><h1 id="尾声">尾声</h1>
+<p>filebrowser 默认用户名密码： admin admin，如果不对的话就直接新建一个admin用户登录进去后在图形化界面操作就好了</p>
 <p>如果你乐意当然还可以设置日志位置：filebrowser -d /etc/filebrowser.db config set &ndash;log /var/log/filebrowser.log</p>
-<p>添加一个用户：filebrowser -d /etc/filebrowser.db users add 填用户名 填密码 &ndash;perm.admin</p>
+<p>添加一个用户：filebrowser  users add 填用户名 填密码 &ndash;perm.admin -d /etc/filebrowser.db<br>
+例如：filebrowser users add guest guest &ndash;perm.admin -d /etc/filebrowser.db</p>
 <p>设置语言环境：filebrowser -d /etc/filebrowser.db config set &ndash;locale zh-cn</p>
 <p>当然这些也可以在你登录之后，在图形化界面去设置。</p>
 <h1 id="疑惑">疑惑</h1>
