@@ -210,3 +210,73 @@ if __name__ == '__main__':
     ...
 
 ```
+# 梅开二度
+上面的代码存在几个大的问题，当然，程序是可以正常跑的。对于sql这块我觉得写的很不好，维护起来会特别的困难，于是在思考如何优化。也就有了第一次尝试改进
+```python3
+def create_table():
+    table_name = ['shi', 'ci', 'author']
+
+    table_struct_shi_ci = """id int not null auto_increment,title varchar(255),author varchar(255),dynastic varchar(255),
+    content text,self_id varchar(255),primary key(id)"""
+    table_struct_author = """id int not null auto_increment,author varchar(255),dynastic varchar(255),full_desc text,
+    short_desc text primary key (id) """
+
+    table_struct = [table_struct_shi_ci, table_struct_shi_ci, table_struct_author]
+    table_dict = dict(zip(table_name, table_struct))
+
+    for key, value in table_dict.items():
+        sql_command = f"""create table if not exists {key} ( {value} );"""
+        print(sql_command)
+    return table_name, table_struct, table_dict
+
+
+def insert_table(table_name, table_fields, table_values):
+    ...
+```
+之所以insert会卡住，是因为列名没有处理好，所以在思考，后面忽然想到，为什么不用类呢？于是代码就变成：
+```python3
+class Table(object):
+    """
+    how to use:
+    ci = Table()
+    column = ["id", "title", "author", "dynastic", "content", "self_id"]
+    column_desc = ["int not null auto_increment", "varchar(255)", "varchar(255)", "varchar(255)", "text", "varchar(255)"]
+    ci.set_all("ci", "id", dict(zip(column, column_desc)))
+    m_dict = {"title": "望岳", "author": "杜甫", "awb": "haha"}
+    ci.sql2insert(m_dict)
+    """
+    table_name = None
+    primary_key = None
+    column_desc = None
+    sql_command = None
+
+    def set_all(self, table_name: str, primary_key: str, column_desc: dict):
+        self.table_name = table_name
+        self.primary_key = primary_key
+        self.column_desc = column_desc
+
+    def sql2create(self):
+        sql_str = ""
+        for key, value in self.column_desc.items():
+            sql_str = sql_str + key + " " + value + ","
+        self.sql_command = f"create table if not exists {self.table_name} ({sql_str} primary key ({self.primary_key}));"
+        return self.sql_command
+
+    def sql2drop(self):
+        self.sql_command = f"drop table {self.table_name}"
+        return self.sql_command
+
+    def sql2insert(self, data_dict):
+        column_key = [key for key in self.column_desc.keys()]
+        insert_key, insert_value = [], []
+        for key, value in data_dict.items():
+            if key in column_key:
+                insert_key.append(key)
+                insert_value.append(value)
+            else:
+                logging.debug(f"Error,this:{key}={value} will be ignored. Input data is:{data_dict}")
+        self.sql_command = f"insert into {self.table_name} ({','.join(insert_key)}) values ({','.join(insert_value)})"
+        return self.sql_command
+```
+事实上，一开始我只是想把数据放进去，已经创建表和删除表，至于insert完全是后面加的了,这时候我脑海其实已经有了把crud写完的想法了，但是，没有需求，所以就暂时不写了。因为我在思考ORM，是的，思考比实现更重要，我选择偷懒~~~
+
