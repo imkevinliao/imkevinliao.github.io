@@ -26,12 +26,12 @@ git clean (轻易删除编译候产生的.o .exe等文件)
   
 # git push
 
-git push origin HEAD:refs/for/<branchName>
+git push origin HEAD:refs/for/<branch_Name>
 
 # git checkout
 git checkout -b <local_name> 
   
-git branch --set-upstream-to=origin/<branchName>
+git branch --set-upstream-to=origin/<branch_Name>
   
 git checkout -b 后面跟的是本地分支名字，可以自己命名，后面还可以继续跟分支表示依据哪个分支检出。    
 （举例：git checkout -b local_dev master, git checkout -b local_dev origin/master)
