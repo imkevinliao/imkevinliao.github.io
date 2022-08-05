@@ -30,8 +30,10 @@ git push origin HEAD:refs/for/<branch_Name>
 
 # git checkout
 git checkout -b <local_name> 
+git checkout -b 后面跟的是本地分支名字，可以自己命名，后面还可以继续跟分支表示依据哪个分支检出。    
+用法举例：git checkout -b local_dev master, git checkout -b local_dev origin/master
   
 git branch --set-upstream-to=origin/<branch_Name>
-  
-git checkout -b 后面跟的是本地分支名字，可以自己命名，后面还可以继续跟分支表示依据哪个分支检出。    
-（举例：git checkout -b local_dev master, git checkout -b local_dev origin/master)
+通常我们根据本地master分支检出dev分支后，可以关联上远程master分支，这样可以更新来自其他人的提交，所以会使用上述命令来关联本地dev分支与远程分支
+用法举例：git branch --set-upstream-to=origin/master dev （dev可以省略如果当前分支就是dev，该语句表面将远程分支master与本地分支dev关联）
+
