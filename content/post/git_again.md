@@ -33,4 +33,5 @@ git checkout -b <local_name>
   
 git branch --set-upstream-to=origin/<branchName>
   
-git checkout -b 后面跟的是本地分支名字，可以自己命名，后面还可以继续跟分支表示依据哪个分支检出。（举例：git checkout -b local_dev master, git checkout -b local_dev origin/master)
+git checkout -b 后面跟的是本地分支名字，可以自己命名，后面还可以继续跟分支表示依据哪个分支检出。
+  （举例：git checkout -b local_dev master, git checkout -b local_dev origin/master)
