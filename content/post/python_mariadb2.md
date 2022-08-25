@@ -257,3 +257,25 @@ if __name__ == '__main__':
 目前算是比较满意的结果了，虽然还可以改进，但是更多的还是需要思考，写代码很简单，难的是写的优雅，任重而道远。去重的思路：一种是在插入时候检查，另一种是先插入后去重。
 
 维护是一件很重要的事！这次也强行插入log模块，感受到在低代码量下表现并不是很显著，可能要在大项目中会有更好的发挥空间。
+
+------------------------------------------------------
+更新：
+后面想到用多进程来提高效率，贴一下更新的部分吧
+```python3
+def core_exec():
+    if isMultiProcess:
+        logging.info("now multiprocess:")
+        multi_core = multiprocessing.Pool(processes=3)
+        multi_core.apply_async(save_to_mariadb, args=(set_table("ci"), get_json_paths(ci_path)), error_callback=error)
+        multi_core.apply_async(save_to_mariadb, args=(set_table("shi"), get_json_paths(shi_path)), error_callback=error)
+        multi_core.close()
+        multi_core.join()
+    else:
+        save_to_mariadb(set_table("ci"), get_json_paths(ci_path))
+        save_to_mariadb(set_table("shi"), get_json_paths(shi_path))
+```
+用了多进程后，忽然发现代码从头到尾就错了，设计之初就应该采取多进程，如今后悔也晚了。
+
+如果设计之初就考虑到这些的话，再把规范弄好，代码维护起来应该会比较方便。这次还有一点点小小的领悟，就是debug时候需要值的打印，应该设计一个较为普遍的打印方式，debug真的非常重要在查找问题的时候，最近工作中就遇到log的问题，因为log没有统一的维护，导致多个模块需要打印log的时候配置极其不方便，一些参数的值也随着代码不断地修改，导致log可能存在问题。
+
+对于效率，每一秒的提高都是一种成功
