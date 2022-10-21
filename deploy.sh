@@ -1,24 +1,27 @@
 #!/bin/bash
 git status
 
-read -p "input commit for this push:" commit
-if [ ! -n "$commit" ]; then
-    commit="."
+read -p "your commit message:" msg
+if [ ! -n "$msg" ]; then
+    msg="."
 fi
-echo "==============================="
-hugo  && git add .  && git commit -m "$commit"  && git push
-echo "==============================="
 
+echo "===master==="
+hugo  && git add .  && git commit -m "$commit"  && git push
+echo "===master==="
+
+echo "===public==="
 cd public/ && git add . && git commit -m "." 
 git push origin master:public
-# 第一次部署出错请使用下面的命令:
-# 第一个项目仓库，第二个网站仓库
-# git push -u origin master:master -f
-# public目录下：git push -u origin master:public -f
+echo "===public==="
 
+# 第一次部署出现错误时候，强制推送，master分支为项目分支，public分支为hugo生成后的网站
 
-# 如果Git提示下面的问题，参考下面的命令
+# 项目分支：git push -u origin master:master -f
+# 网站分支：cd public/ && git push -u origin master:public -f
+
 # The file will have its original line endings in your working directory
-# git config --global core.autocrlf true
 # git config --global core.safecrlf true
-# 如果后面Git提交出现 fatal: LF would be replaced by CRLF那还是git config --global core.autocrlf false吧
+
+# fatal: LF would be replaced by CRLF
+# git config --global core.autocrlf false
