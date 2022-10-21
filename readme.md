@@ -30,7 +30,7 @@ git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 
 本地预览命令`hugo server` 
 
-让google收录：https://affectalways.github.io/hugo_seo/(顺带说一句，百度，搜狗等国内搜索引擎不收录 github page构建的网站不用去折腾，涉及到政治原因，必应可以收录)
+让google收录：https://affectalways.github.io/hugo_seo/  (顺带说一句，百度，搜狗等国内搜索引擎不收录 github page构建的网站不用去折腾，涉及到政治原因，必应可以收录)
 
 
 # 独立思考 maxims and epigrams
