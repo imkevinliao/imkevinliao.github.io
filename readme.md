@@ -1,11 +1,11 @@
-# 博客
+# 博客简介
 这是一个GithubPage + Hugo构成的个人博客，这大概是所有博客的最后归宿，托管在Github上不用费心，省去服务器的费用，维护服务器的费用，而且还有绝对的自主权。
 
 项目有两个分支：master和public
 
 master是项目的所有文件，public是hugo生成的用于显示的网站内容。可以将master和public分开，作为两个仓库，master作为私有仓库，public作为公开仓库，这样就实现了"分离"
 
-# 使用
+# 使用说明
 
 1. 本地（windows）初始化Git仓库（新建任意空白文件夹）   
 ```
@@ -31,7 +31,7 @@ git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 本地预览命令`hugo server` 
 
 
-# maxims and epigrams
+# 独立思考 maxims and epigrams
 
 > 是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法
 > 生存…… 这根本不是互联网，不是为我服务的互联网，而是在消费我的互联网，是让我变傻变笨的互联网…… 我不能忍，因为它影响到了我的生存……
