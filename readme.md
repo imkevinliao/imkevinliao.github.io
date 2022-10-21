@@ -30,6 +30,8 @@ git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 
 本地预览命令`hugo server` 
 
+让google收录：https://affectalways.github.io/hugo_seo/
+
 
 # 独立思考 maxims and epigrams
 
