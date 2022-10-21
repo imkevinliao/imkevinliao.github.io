@@ -3,4 +3,4 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'anatole'
 
-googleSiteVerification = True
+googleSiteVerification = true
