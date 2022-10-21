@@ -20,15 +20,12 @@ git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 ```
 ./init.sh 
 ```
-5. 写文章
+5. 写文章以及部署
 ```
 ./write.sh
-```
-6. 部署
-```
 ./deploy.sh 
 ```
-7. 附录：
+6. 附录：
 需要自行修改脚本中的仓库地址，根据自己的地址配即可，linux下载hugo：[ubuntu] sudo apt install hugo
 
 本地预览命令`hugo server` 
