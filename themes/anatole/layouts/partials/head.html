@@ -4,6 +4,13 @@
    
   </title>
 
+ <! --google--> 
+ {{- with .Site.Params.googleSiteVerification }}
+
+        <meta name="google-site-verification" content="google15d4d3eed243bdc9.html" />
+
+ {{- end }}
+
   <!-- Meta -->
   <meta charset="utf-8" />
   {{- hugo.Generator -}}
