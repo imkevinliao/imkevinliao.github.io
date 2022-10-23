@@ -11,7 +11,7 @@ hugo  && git add .  && git commit -m "$msg"  && git push
 echo "===master==="
 
 echo "===public==="
-cd public/ && git add . && git commit -m "." 
+cd public/ && git init && git remote add origin git@github.com:imkevinliao/imkevinliao.github.io.git && git add . && git commit -m "."
 git push origin master:public --force
 echo "===public==="
 
