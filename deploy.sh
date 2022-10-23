@@ -12,7 +12,7 @@ echo "===master==="
 
 echo "===public==="
 cd public/ 
-git add . -f && git commit -m "." && git push origin master:public --force
+git add . && git commit -m "." && git push origin master:public --force
 echo "===public==="
 
 # 项目分支：git push -u origin master:master -f
