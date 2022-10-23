@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Kevin
+   
+  </title>
+
+ 
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Less is More
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.747c2051c988c578be617a76ccc39f8ccfbe01837a9c2dffa1816ceee36333fa.css"
+    integrity="sha256-dHwgUcmIxXi&#43;YXp2zMOfjM&#43;&#43;AYN6nC3/oYFs7uNjM/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+    integrity="sha256-zITtaDBXzBdd36c46mui1ciCuVy2T1C/m&#43;kYyzeRiHs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/java%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.413f798d8aa82610bef17a5ca1d7e962ec185be395f1aeb3f45d1891af568b65.js"
+    integrity="sha256-QT95jYqoJhC&#43;8XpcodfpYuwYW&#43;OV8a6z9F0Yka9Wi2U="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.fcf9526f15b3b4e08472de192969ab28a4cdcb32ac94f83e85a8b84e9b45acd2.js"
+      integrity="sha256-/PlSbxWztOCEct4ZKWmrKKTNyzKslPg&#43;hai4TptFrNI="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Java爬虫笔记"/>
+<meta name="twitter:description" content="前言 这还是19年的时候，搞java爬虫时候，当时弄完后整理好的一些笔记，后面又删除了一些简单的内容。笔记的话主要是分为两块，爬虫一个是使用HttpClient&#43;Jsoup完成，另外一个是selenium爬虫。稍微提一下selenium吧，事实上这个东西不是爬虫，是自动化测试工具，但是它做爬虫可以简化很多麻烦的事情，因为selenium本质就是模拟人类操作。"/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Java爬虫笔记",
+        "headline": "Java爬虫笔记",
+        "alternativeHeadline": "",
+        "description": "
+      
+        前言 这还是19年的时候，搞java爬虫时候，当时弄完后整理好的一些笔记，后面又删除了一些简单的内容。笔记的话主要是分为两块，爬虫一个是使用HttpClient\x2bJsoup完成，另外一个是selenium爬虫。稍微提一下selenium吧，事实上这个东西不是爬虫，是自动化测试工具，但是它做爬虫可以简化很多麻烦的事情，因为selenium本质就是模拟人类操作。
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/post\/java%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-10-27T13:19:59.00Z",
+        "datePublished": "2021-10-27T13:19:59.00Z",
+        "dateModified": "2021-10-27T13:19:59.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kevin",
+            "url": "https://example.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/example.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://example.com/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/example.com\/post\/java%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0\/",
+        "wordCount" : "591",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/connect/"
+              
+              title=""
+              >Connect</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">imkevinliao</a></h3>
+        <div class="description">
+          <p>Less is More</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/imkevinliao/imkevinliao.github.io" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:im.kevinliao@gmail.com" rel="me" aria-label="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Java爬虫笔记</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                2021/10/27
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">3-minute read</span>
+          </div>
+
+        
+      </div><h1 id="前言">前言</h1>
+<p>这还是19年的时候，搞java爬虫时候，当时弄完后整理好的一些笔记，后面又删除了一些简单的内容。笔记的话主要是分为两块，爬虫一个是使用HttpClient+Jsoup完成，另外一个是selenium爬虫。稍微提一下selenium吧，事实上这个东西不是爬虫，是自动化测试工具，但是它做爬虫可以简化很多麻烦的事情，因为selenium本质就是模拟人类操作。</p>
+<h1 id="selenium3部分">Selenium3部分:</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">配置部分:System.setProperty(&#34;webdriver.chrome.driver&#34;, &#34;C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe&#34;);ChromeOptions options = new ChromeOptions();
+
+设置禁止加载项,2就是代表禁止加载的意思:Map&lt;String, Object&gt; prefs = new HashMap&lt;String, Object&gt;();prefs.put(&#34;profile.managed_default_content_settings.javascript&#34;, 2);prefs.put(&#34;profile.managed_default_content_settings.images&#34;, 2);    
+
+options.setExperimentalOption(&#34;prefs&#34;, prefs);options.setHeadless(Boolean.TRUE);无头模式.
+	
+启动driver并将设定的参数配置好:WebDriver driver = new ChromeDriver(options);driver.manage().window().maximize();
+隐式等待设置一次即可，即等待页面元素出现的最大时间:driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);Thread.sleep(3000);线程中断.
+options.addArguments(&#34;--user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data/Default&#34;);通过配置参数禁止data;的出现，实际路径通过chrome version查看然后修改下.
+
+页面元素不存在的问题，使用try catch执行，立一个Boolean flag，根据flag是否修改，来决定元素是否存在，再进行处理.
+</code></pre></div><h1 id="httpclientjsoup部分">HttpClient+Jsoup部分:</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">CloseableHttpClient httpClient=HttpClients.createDefault();// 创建httpclient请求对象
+String url=&#34;https://www.mafengwo.cn/traveller/&#34;;
+HttpGet httpGet=new HttpGet(url);// 声明httpget请求对象 
+//请求参数配置
+RequestConfig config=RequestConfig.custom().setConnectTimeout(1000)
+					.setConnectionRequestTimeout(500)
+					.setSocketTimeout(10*1000)
+					.build();
+httpGet.setConfig(config); //参数放到httpGet里面
+httpGet.addHeader(&#34;User-Agent&#34;, &#34;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.6)&#34;);
+httpGet.addHeader(&#34;Content-Type&#34;, &#34;application/x-www-form-urlencoded&#34;);
+CloseableHttpResponse response = httpClient.execute(httpGet); // 使用httpclient发起请求
+String html =EntityUtils.toString(response.getEntity(), &#34;utf-8&#34;);//获取请求内容，设置编码.
+response.close();   httpClient.close();  //注意关闭资源
+
+httpclient结束,下面是jsoup部分
+Document doc=Jsoup.parse(html);//jsoup将获取的html放到doc中分析
+String title=doc.getElementsByTag(&#34;title&#34;).text();//举例分析，处理页面
+</code></pre></div><h1 id="下载图片代码">下载图片代码:</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">	private static void downloadPicture(String targetUrl,String path) {
+        URL url = null;
+        try {
+            url = new URL(targetUrl);
+            DataInputStream dataInputStream = new DataInputStream(url.openStream());
+
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(path));
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+            byte[] buffer = new byte[1024];
+            int length;
+
+            while ((length = dataInputStream.read(buffer)) &gt; 0) {
+                output.write(buffer, 0, length);
+            }
+            BASE64Encoder encoder = new BASE64Encoder();
+            String encode = encoder.encode(buffer);//返回Base64编码过的字节数组字符串
+            fileOutputStream.write(output.toByteArray());
+            dataInputStream.close();
+            fileOutputStream.close();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+</code></pre></div><h1 id="数据库代码防sql注入">数据库代码:(防sql注入)</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">	private static void DataSolve(Connection conn, TravelArtical myObject) {
+			try {
+				String title = myObject.getTitle();
+				String artical = myObject.getArtical();
+				int num=myObject.getNum();
+				String sql = &#34;INSERT INTO travel(title,artical，num) VALUES &#34; + &#34; (?,?,?)&#34;;
+				PreparedStatement pre = (PreparedStatement) conn.prepareStatement(sql);
+				pre.setString(1,title);
+				pre.setString(2,artical);
+				pre.setInt(3,num);
+				pre.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+</code></pre></div><h1 id="jdbc-helper代码">JDBC Helper代码:</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">	public class DataBaseConnectionHelp {
+		private static final String driver = &#34;com.mysql.jdbc.Driver&#34;;
+		//设置encoding防止出现中文？
+		private static final String url = &#34;jdbc:mysql://localhost:3306/kevin?characterEncoding=utf-8&#34;;
+		//?characterEncoding=utf-8&amp;amp;serverTimezone=UTC&amp;amp;useSSL=false   MySql8.0以上，jdbc接口名也改了
+		private static final String username = &#34;root&#34;;
+		private static final String password = &#34;root&#34;;
+		
+		private static Connection conn=null;
+		
+		static {
+			try {
+				Class.forName(driver);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+		public static Connection getConnection() {
+			if(conn==null) {
+				try {
+					conn = DriverManager.getConnection(url,username,password);
+				} catch (SQLException e) {
+					e.printStackTrace();
+					System.out.println(&#34;数据库连接失败&#34;);
+				}
+				return conn;
+			}else {
+				return conn;
+			}	
+		}	
+	}
+</code></pre></div><p>其他部分:
+String类型转integer 类型，如果str非数字会报错 int num=Integer.parseInt(str);</p>
+<p>关于文件流的代码:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go">	<span class="kn">package</span> <span class="nx">myCode</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">BufferedReader</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">File</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">FileInputStream</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">FileNotFoundException</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">FileOutputStream</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">FileReader</span><span class="p">;</span>
+	<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">IOException</span><span class="p">;</span>
+	<span class="c1">//https://www.cnblogs.com/chen-lhx/p/5610678.html
+</span><span class="c1"></span>	<span class="c1">//所有方法都已经单独测试过了，可以直接使用
+</span><span class="c1"></span>	<span class="nx">public</span> <span class="nx">class</span> <span class="nx">IOAndFileCode</span> <span class="p">{</span>
+		<span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">Exception</span> <span class="p">{</span>
+			<span class="nx">String</span> <span class="nx">path</span><span class="p">=</span><span class="s">&#34;D:/javaTest&#34;</span><span class="p">;</span>
+			<span class="nx">String</span> <span class="nx">str</span><span class="p">;</span>
+			<span class="c1">//读文件
+</span><span class="c1"></span>			<span class="nf">FileInputStreamDemo</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			<span class="c1">//写文件
+</span><span class="c1"></span>			<span class="nf">PrintStream</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			
+			<span class="c1">//读文件 在IO操作中，BufferedReader和BufferedWriter效率更高
+</span><span class="c1"></span>			<span class="nx">str</span><span class="p">=</span><span class="nf">BufferReaderDemo</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			<span class="c1">//写文件 在IO操作中，BufferedReader和BufferedWriter效率更高
+</span><span class="c1"></span>			<span class="nf">BufferedWriterDemo</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="nx">str</span><span class="p">);</span>
+			
+			<span class="c1">//创建文件
+</span><span class="c1"></span>			<span class="nf">createFile</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			<span class="c1">//删除文件
+</span><span class="c1"></span>			<span class="nf">deleteFile</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			<span class="c1">//创建目录
+</span><span class="c1"></span>			<span class="nf">createDir</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+			<span class="c1">//删除目录
+</span><span class="c1"></span>			<span class="nf">deleteDir</span><span class="p">(</span><span class="nx">path</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">BufferedWriterDemo</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">String</span> <span class="nx">str</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">file</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;hello.txt&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(!</span><span class="nx">file</span><span class="p">.</span><span class="nf">exists</span><span class="p">())</span>
+				<span class="nx">file</span><span class="p">.</span><span class="nf">createNewFile</span><span class="p">();</span>
+			<span class="nx">FileOutputStream</span> <span class="nx">out</span><span class="p">=</span><span class="nx">new</span> <span class="nf">FileOutputStream</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+			<span class="nx">StringBuffer</span> <span class="nx">sb</span><span class="p">=</span><span class="nx">new</span> <span class="nf">StringBuffer</span><span class="p">();</span>
+			<span class="nx">sb</span><span class="p">.</span><span class="nb">append</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span>
+			<span class="nx">out</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="nx">sb</span><span class="p">.</span><span class="nf">toString</span><span class="p">().</span><span class="nf">getBytes</span><span class="p">(</span><span class="s">&#34;utf-8&#34;</span><span class="p">));</span>
+			<span class="cm">/*
+</span><span class="cm">			* for(int i=0;i&lt;10000;i++){ StringBuffer sb=new StringBuffer();
+</span><span class="cm">			* sb.append(&#34;这是第&#34;+i+&#34;行:前面介绍的各种方法都不关用,为什么总是奇怪的问题 &#34;);
+</span><span class="cm">			* out.write(sb.toString().getBytes(&#34;utf-8&#34;)); }
+</span><span class="cm">			*/</span>  
+			<span class="nx">out</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
+			
+		<span class="p">}</span>
+		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">String</span> <span class="nf">BufferReaderDemo</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">file</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;01.txt&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(!</span><span class="nx">file</span><span class="p">.</span><span class="nf">exists</span><span class="p">()</span><span class="o">||</span><span class="nx">file</span><span class="p">.</span><span class="nf">isDirectory</span><span class="p">())</span> 
+				<span class="nx">throw</span> <span class="nx">new</span> <span class="nf">FileNotFoundException</span><span class="p">();</span>
+			<span class="nx">BufferedReader</span> <span class="nx">br</span><span class="p">=</span><span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">FileReader</span><span class="p">(</span><span class="nx">file</span><span class="p">));</span> 
+			<span class="nx">String</span> <span class="nx">temp</span><span class="p">=</span><span class="nx">null</span><span class="p">;</span>
+			<span class="nx">StringBuffer</span> <span class="nx">sb</span><span class="p">=</span><span class="nx">new</span> <span class="nf">StringBuffer</span><span class="p">();</span>
+			<span class="nx">temp</span><span class="p">=</span><span class="nx">br</span><span class="p">.</span><span class="nf">readLine</span><span class="p">();</span>
+			<span class="nf">while</span><span class="p">(</span><span class="nx">temp</span><span class="o">!=</span><span class="nx">null</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">sb</span><span class="p">.</span><span class="nb">append</span><span class="p">(</span><span class="nx">temp</span><span class="o">+</span><span class="s">&#34;\n&#34;</span><span class="p">);</span>
+				<span class="nx">temp</span><span class="p">=</span><span class="nx">br</span><span class="p">.</span><span class="nf">readLine</span><span class="p">();</span>
+			<span class="p">}</span>
+			<span class="k">return</span> <span class="nx">sb</span><span class="p">.</span><span class="nf">toString</span><span class="p">();</span>
+		<span class="p">}</span>
+		<span class="c1">//删除目录，删除目录必须保证目录下没有子目录否则删除失败,采用递归地方式删除该目录下所有文件
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">deleteDir</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">dir</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;makeDir&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nf">exists</span><span class="p">())</span> <span class="p">{</span>
+				<span class="nx">File</span><span class="p">[]</span><span class="nx">temp</span> <span class="p">=</span><span class="nx">dir</span><span class="p">.</span><span class="nf">listFiles</span><span class="p">();</span>
+				<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="nx">temp</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="k">if</span><span class="p">(</span><span class="nx">temp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nf">isDirectory</span><span class="p">())</span> <span class="p">{</span>
+						<span class="nf">deleteDir</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="nx">temp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nf">getName</span><span class="p">());</span>	
+					<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+						<span class="nx">temp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nb">delete</span><span class="p">();</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+				<span class="nx">dir</span><span class="p">.</span><span class="nb">delete</span><span class="p">();</span>
+			<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+				<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;目录不存在&#34;</span><span class="p">);</span>
+			<span class="p">}</span>
+			
+		<span class="p">}</span>
+		<span class="c1">//删除文件
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">deleteFile</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">file</span> <span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;newFile&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nf">exists</span><span class="p">()</span><span class="o">&amp;&amp;</span><span class="nx">file</span><span class="p">.</span><span class="nf">isFile</span><span class="p">())</span> <span class="p">{</span>
+				<span class="nx">file</span><span class="p">.</span><span class="nb">delete</span><span class="p">();</span>
+			<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+				<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;文件不存在&#34;</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="c1">//创建文件
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">createFile</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
+			<span class="c1">// TODO Auto-generated method stub
+</span><span class="c1"></span>			<span class="nx">File</span> <span class="nx">file</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;newFile&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(!</span><span class="nx">file</span><span class="p">.</span><span class="nf">exists</span><span class="p">())</span> <span class="p">{</span>
+				<span class="nx">file</span><span class="p">.</span><span class="nf">createNewFile</span><span class="p">();</span>
+			<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+				<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;文件已经存在&#34;</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="c1">//创建文件夹
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">createDir</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">dir</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;makeDir&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(!</span><span class="nx">dir</span><span class="p">.</span><span class="nf">exists</span><span class="p">())</span> <span class="p">{</span>
+				<span class="nx">dir</span><span class="p">.</span><span class="nf">mkdir</span><span class="p">();</span>
+			<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+				<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;目录已存在&#34;</span><span class="p">);</span>
+			<span class="p">}</span>
+			
+		<span class="p">}</span>
+		<span class="c1">//读取文件
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">String</span> <span class="nf">FileInputStreamDemo</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
+			<span class="nx">File</span> <span class="nx">file</span><span class="p">=</span><span class="nx">new</span> <span class="nf">File</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;01.txt&#34;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(!</span><span class="nx">file</span><span class="p">.</span><span class="nf">exists</span><span class="p">()</span><span class="o">||</span><span class="nx">file</span><span class="p">.</span><span class="nf">isDirectory</span><span class="p">())</span> 
+				<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;fileNotFound&#34;</span><span class="p">);</span>
+			<span class="nx">FileInputStream</span> <span class="nx">fis</span><span class="p">=</span><span class="nx">new</span> <span class="nf">FileInputStream</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
+			<span class="kt">byte</span><span class="p">[]</span><span class="nx">buf</span><span class="p">=</span><span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span>
+			<span class="nx">StringBuffer</span> <span class="nx">sb</span><span class="p">=</span><span class="nx">new</span> <span class="nf">StringBuffer</span><span class="p">();</span>
+			<span class="nf">while</span><span class="p">((</span><span class="nx">fis</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="nx">buf</span><span class="p">)</span><span class="o">!=-</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+				<span class="nx">sb</span><span class="p">.</span><span class="nb">append</span><span class="p">(</span><span class="nx">new</span> <span class="nf">String</span><span class="p">(</span><span class="nx">buf</span><span class="p">));</span>
+				<span class="nx">buf</span><span class="p">=</span><span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span><span class="c1">//重新生成，避免和上次读取数据重复
+</span><span class="c1"></span>			<span class="p">}</span>
+			<span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">sb</span><span class="p">);</span>
+			<span class="k">return</span> <span class="nx">sb</span><span class="p">.</span><span class="nf">toString</span><span class="p">();</span>	
+		<span class="p">}</span>
+		<span class="c1">//写文件(文件不存在则创建)
+</span><span class="c1"></span>		<span class="nx">private</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">PrintStream</span><span class="p">(</span><span class="nx">String</span> <span class="nx">path</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">try</span> <span class="p">{</span>
+				<span class="nx">FileOutputStream</span> <span class="nx">out</span><span class="p">=</span><span class="nx">new</span> <span class="nf">FileOutputStream</span><span class="p">(</span><span class="nx">path</span><span class="o">+</span><span class="s">&#34;/&#34;</span><span class="o">+</span><span class="s">&#34;02.txt&#34;</span><span class="p">);</span>
+				<span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">PrintStream</span> <span class="nx">p</span><span class="p">=</span><span class="nx">new</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nf">PrintStream</span><span class="p">(</span><span class="nx">out</span><span class="p">);</span>
+				<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nx">p</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;this is &#34;</span><span class="o">+</span><span class="nx">i</span><span class="o">+</span><span class="s">&#34;line&#34;</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="nf">catch</span> <span class="p">(</span><span class="nx">FileNotFoundException</span> <span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		
+	<span class="p">}</span>
+</code></pre></div><h1 id="遇到的问题">遇到的问题</h1>
+<ol>
+<li>
+<p>SQL注入问题：在将数据写入数据库的时候一定要注意防SQL注入，因为正好碰到爬取到某条数据插入数据库的时候因为代码直接写的，没有注意SQL注入导致报错，异常。</p>
+</li>
+<li>
+<p>Selenium配置问题：需要注意的是下载对应浏览器版本的驱动（drive），如果是Chrome就下载对应版本的Drive，Firefox就下载Firefox对应的驱动。</p>
+</li>
+<li>
+<p>JDBC问题：准确来说不算是问题，因为完全不了解，所以我在这里搞了半天才弄懂这个代码要怎么写，当然大部分是参考网上的。</p>
+</li>
+<li>
+<p>Mysql版本问题：5.7和8.0版本的JDBC的写法好像有些不一样，这里算是一个坑吧，如果没必要软件还是不要随意升级。</p>
+</li>
+</ol>
+<h1 id="心得">心得</h1>
+<p>其实当然是有很多的了，但是经历过一遍以后，就发现很多细小的地方好像没必要写，每个人的认知不一样，也许我的小问题你觉得完全不是问题。</p>
+<p>代码是我整理过好几次后的，所以看起来，审美还能接受吧。HttpClient的配置部分可能是当时第一次弄，反正那个地方我反复折腾了好几次才搞清楚，Selenium配置也差不多慢慢理解吧。Selenium的无头模式建议上手后再开启，刚开始还是看有头模式吧，比较清楚，一般调试时候出问题，我也会打开有头模式看什么情况。</p>
+<p>关于jar包部分，Maven是真的挺好用的，需要什么jar包，直接搜索名字 + Maven，不用自己手动去下，那样太影响开发效率了。</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <meting-js fixed="true" auto="https://music.163.com/#/song?id=1494835439"></meting-js>
+    
+  </body>
+</html>

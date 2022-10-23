@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Kevin
+   
+  </title>
+
+ 
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Less is More
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.747c2051c988c578be617a76ccc39f8ccfbe01837a9c2dffa1816ceee36333fa.css"
+    integrity="sha256-dHwgUcmIxXi&#43;YXp2zMOfjM&#43;&#43;AYN6nC3/oYFs7uNjM/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+    integrity="sha256-zITtaDBXzBdd36c46mui1ciCuVy2T1C/m&#43;kYyzeRiHs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/tqdm_note/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.413f798d8aa82610bef17a5ca1d7e962ec185be395f1aeb3f45d1891af568b65.js"
+    integrity="sha256-QT95jYqoJhC&#43;8XpcodfpYuwYW&#43;OV8a6z9F0Yka9Wi2U="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.fcf9526f15b3b4e08472de192969ab28a4cdcb32ac94f83e85a8b84e9b45acd2.js"
+      integrity="sha256-/PlSbxWztOCEct4ZKWmrKKTNyzKslPg&#43;hai4TptFrNI="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="tqdm_note"/>
+<meta name="twitter:description" content="tqdm 在看别人写的代码的时候发现的tqdm模块，当时还很好奇，这命名不像是标准库函数，于是乎去搜索了一下，是一个显示进度条的库"/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "tqdm_note",
+        "headline": "tqdm_note",
+        "alternativeHeadline": "",
+        "description": "
+      
+        tqdm 在看别人写的代码的时候发现的tqdm模块，当时还很好奇，这命名不像是标准库函数，于是乎去搜索了一下，是一个显示进度条的库
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/post\/tqdm_note\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-09-19T16:08:33.00Z",
+        "datePublished": "2022-09-19T16:08:33.00Z",
+        "dateModified": "2022-09-19T16:08:33.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kevin",
+            "url": "https://example.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/example.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://example.com/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/example.com\/post\/tqdm_note\/",
+        "wordCount" : "823",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/connect/"
+              
+              title=""
+              >Connect</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">imkevinliao</a></h3>
+        <div class="description">
+          <p>Less is More</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/imkevinliao/imkevinliao.github.io" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:im.kevinliao@gmail.com" rel="me" aria-label="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>tqdm_note</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                2022/09/19
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">4-minute read</span>
+          </div>
+
+        
+      </div><h1 id="tqdm">tqdm</h1>
+<p>在看别人写的代码的时候发现的tqdm模块，当时还很好奇，这命名不像是标准库函数，于是乎去搜索了一下，是一个显示进度条的库</p>
+<h1 id="演示">演示</h1>
+<p>试看如下代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python3" data-lang="python3"><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">sleep</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&#34;加载中&#34;</span><span class="p">,</span> <span class="n">colour</span><span class="o">=</span><span class="s2">&#34;green&#34;</span><span class="p">):</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">加载中:  70%|███████   | 70/100 [01:10&lt;00:30,  1.01s/it]
+</code></pre></div><p>当时第一次看得时候不太理解 01:10&lt;00:30 这种显示方式，对此感到非常的不舒服，想要调整一下格式，去网上搜了搜tqdm的教程，发现清一色都是tqdm(range()),事实上和官方提供的大同小异，官方文档提供的例子更为丰富一些。</p>
+<p>多次查找无果后，深感自己阅读文档的水平不足。</p>
+<h1 id="提高">提高</h1>
+<p>为了解决 01:10&lt;00:30 这个问题，忽而记起网上对tqdm库的描述，这是个纯python实现的库。点进去看源码，文件名std.py。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python3" data-lang="python3">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">leave</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">ncols</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mininterval</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">maxinterval</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">miniters</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">ascii</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">disable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;it&#39;</span><span class="p">,</span> <span class="n">unit_scale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">dynamic_ncols</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">smoothing</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">bar_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">postfix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unit_divisor</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">write_bytes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">lock_args</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">colour</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">gui</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">        Parameters
+</span><span class="s2">        ----------
+</span><span class="s2">        iterable  : iterable, optional
+</span><span class="s2">            Iterable to decorate with a progressbar.
+</span><span class="s2">            Leave blank to manually manage the updates.
+</span><span class="s2">        desc  : str, optional
+</span><span class="s2">            Prefix for the progressbar.
+</span><span class="s2">        total  : int or float, optional
+</span><span class="s2">            The number of expected iterations. If unspecified,
+</span><span class="s2">            len(iterable) is used if possible. If float(&#34;inf&#34;) or as a last
+</span><span class="s2">            resort, only basic progress statistics are displayed
+</span><span class="s2">            (no ETA, no progressbar).
+</span><span class="s2">            If `gui` is True and this parameter needs subsequent updating,
+</span><span class="s2">            specify an initial arbitrary large positive number,
+</span><span class="s2">            e.g. 9e9.
+</span><span class="s2">        leave  : bool, optional
+</span><span class="s2">            If [default: True], keeps all traces of the progressbar
+</span><span class="s2">            upon termination of iteration.
+</span><span class="s2">            If `None`, will leave only if `position` is `0`.
+</span><span class="s2">        file  : `io.TextIOWrapper` or `io.StringIO`, optional
+</span><span class="s2">            Specifies where to output the progress messages
+</span><span class="s2">            (default: sys.stderr). Uses `file.write(str)` and `file.flush()`
+</span><span class="s2">            methods.  For encoding, see `write_bytes`.
+</span><span class="s2">        ncols  : int, optional
+</span><span class="s2">            The width of the entire output message. If specified,
+</span><span class="s2">            dynamically resizes the progressbar to stay within this bound.
+</span><span class="s2">            If unspecified, attempts to use environment width. The
+</span><span class="s2">            fallback is a meter width of 10 and no limit for the counter and
+</span><span class="s2">            statistics. If 0, will not print any meter (only stats).
+</span><span class="s2">        mininterval  : float, optional
+</span><span class="s2">            Minimum progress display update interval [default: 0.1] seconds.
+</span><span class="s2">        maxinterval  : float, optional
+</span><span class="s2">            Maximum progress display update interval [default: 10] seconds.
+</span><span class="s2">            Automatically adjusts `miniters` to correspond to `mininterval`
+</span><span class="s2">            after long display update lag. Only works if `dynamic_miniters`
+</span><span class="s2">            or monitor thread is enabled.
+</span><span class="s2">        miniters  : int or float, optional
+</span><span class="s2">            Minimum progress display update interval, in iterations.
+</span><span class="s2">            If 0 and `dynamic_miniters`, will automatically adjust to equal
+</span><span class="s2">            `mininterval` (more CPU efficient, good for tight loops).
+</span><span class="s2">            If &gt; 0, will skip display of specified number of iterations.
+</span><span class="s2">            Tweak this and `mininterval` to get very efficient loops.
+</span><span class="s2">            If your progress is erratic with both fast and slow iterations
+</span><span class="s2">            (network, skipping items, etc) you should set miniters=1.
+</span><span class="s2">        ascii  : bool or str, optional
+</span><span class="s2">            If unspecified or False, use unicode (smooth blocks) to fill
+</span><span class="s2">            the meter. The fallback is to use ASCII characters &#34; 123456789#&#34;.
+</span><span class="s2">        disable  : bool, optional
+</span><span class="s2">            Whether to disable the entire progressbar wrapper
+</span><span class="s2">            [default: False]. If set to None, disable on non-TTY.
+</span><span class="s2">        unit  : str, optional
+</span><span class="s2">            String that will be used to define the unit of each iteration
+</span><span class="s2">            [default: it].
+</span><span class="s2">        unit_scale  : bool or int or float, optional
+</span><span class="s2">            If 1 or True, the number of iterations will be reduced/scaled
+</span><span class="s2">            automatically and a metric prefix following the
+</span><span class="s2">            International System of Units standard will be added
+</span><span class="s2">            (kilo, mega, etc.) [default: False]. If any other non-zero
+</span><span class="s2">            number, will scale `total` and `n`.
+</span><span class="s2">        dynamic_ncols  : bool, optional
+</span><span class="s2">            If set, constantly alters `ncols` and `nrows` to the
+</span><span class="s2">            environment (allowing for window resizes) [default: False].
+</span><span class="s2">        smoothing  : float, optional
+</span><span class="s2">            Exponential moving average smoothing factor for speed estimates
+</span><span class="s2">            (ignored in GUI mode). Ranges from 0 (average speed) to 1
+</span><span class="s2">            (current/instantaneous speed) [default: 0.3].
+</span><span class="s2">        bar_format  : str, optional
+</span><span class="s2">            Specify a custom bar string formatting. May impact performance.
+</span><span class="s2">            [default: &#39;</span><span class="si">{l_bar}{bar}{r_bar}</span><span class="s2">&#39;], where
+</span><span class="s2">            l_bar=&#39;</span><span class="si">{desc}</span><span class="s2">: </span><span class="si">{percentage:3.0f}</span><span class="s2">%|&#39; and
+</span><span class="s2">            r_bar=&#39;| </span><span class="si">{n_fmt}</span><span class="s2">/</span><span class="si">{total_fmt}</span><span class="s2"> [</span><span class="si">{elapsed}</span><span class="s2">&lt;</span><span class="si">{remaining}</span><span class="s2">, &#39;
+</span><span class="s2">              &#39;</span><span class="si">{rate_fmt}{postfix}</span><span class="s2">]&#39;
+</span><span class="s2">            Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,
+</span><span class="s2">              percentage, elapsed, elapsed_s, ncols, nrows, desc, unit,
+</span><span class="s2">              rate, rate_fmt, rate_noinv, rate_noinv_fmt,
+</span><span class="s2">              rate_inv, rate_inv_fmt, postfix, unit_divisor,
+</span><span class="s2">              remaining, remaining_s, eta.
+</span><span class="s2">            Note that a trailing &#34;: &#34; is automatically removed after </span><span class="si">{desc}</span><span class="s2">
+</span><span class="s2">            if the latter is empty.
+</span><span class="s2">        initial  : int or float, optional
+</span><span class="s2">            The initial counter value. Useful when restarting a progress
+</span><span class="s2">            bar [default: 0]. If using float, consider specifying `</span><span class="si">{n:.3f}</span><span class="s2">`
+</span><span class="s2">            or similar in `bar_format`, or specifying `unit_scale`.
+</span><span class="s2">        position  : int, optional
+</span><span class="s2">            Specify the line offset to print this bar (starting from 0)
+</span><span class="s2">            Automatic if unspecified.
+</span><span class="s2">            Useful to manage multiple bars at once (eg, from threads).
+</span><span class="s2">        postfix  : dict or *, optional
+</span><span class="s2">            Specify additional stats to display at the end of the bar.
+</span><span class="s2">            Calls `set_postfix(**postfix)` if possible (dict).
+</span><span class="s2">        unit_divisor  : float, optional
+</span><span class="s2">            [default: 1000], ignored unless `unit_scale` is True.
+</span><span class="s2">        write_bytes  : bool, optional
+</span><span class="s2">            If (default: None) and `file` is unspecified,
+</span><span class="s2">            bytes will be written in Python 2. If `True` will also write
+</span><span class="s2">            bytes. In all other cases will default to unicode.
+</span><span class="s2">        lock_args  : tuple, optional
+</span><span class="s2">            Passed to `refresh` for intermediate output
+</span><span class="s2">            (initialisation, iterating, and updating).
+</span><span class="s2">        nrows  : int, optional
+</span><span class="s2">            The screen height. If specified, hides nested bars outside this
+</span><span class="s2">            bound. If unspecified, attempts to use environment height.
+</span><span class="s2">            The fallback is 20.
+</span><span class="s2">        colour  : str, optional
+</span><span class="s2">            Bar colour (e.g. &#39;green&#39;, &#39;#00ff00&#39;).
+</span><span class="s2">        delay  : float, optional
+</span><span class="s2">            Don&#39;t display until [default: 0] seconds have elapsed.
+</span><span class="s2">        gui  : bool, optional
+</span><span class="s2">            WARNING: internal parameter - do not use.
+</span><span class="s2">            Use tqdm.gui.tqdm(...) instead. If set, will attempt to use
+</span><span class="s2">            matplotlib animations for a graphical output [default: False].
+</span></code></pre></div><p>以往看一些源码都是一堆说明然后写个pass，这种实现方式一般都是使用c语言实现的，源码看起来会比较麻烦。而纯python实现的那可太好了。</p>
+<p>bar_format 这个参数，想来就是我想要的了，看一下注释里bar_format的描述 default: &lsquo;{l_bar}{bar}{r_bar}',试了试就理解了这三个参数的意义，很可惜的是依然不能解决我的问题。</p>
+<p>再深入往里看，r_bar这个参数引起了我的注意，这应该就是我关注的部分了。随后找到format_meter函数，找到如下代码：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">r_bar</span> <span class="o">=</span> <span class="s1">&#39;| {0}/{1} [{2}&lt;{3}, {4}{5}]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_fmt</span><span class="p">,</span> <span class="n">total_fmt</span><span class="p">,</span> <span class="n">elapsed_str</span><span class="p">,</span> <span class="n">remaining_str</span><span class="p">,</span> <span class="n">rate_fmt</span><span class="p">,</span> <span class="n">postfix</span><span class="p">)</span>
+</code></pre></div><p>至此算是完了，但又没完。我翻遍整个std.py文件，没找到单独设置r_bar的地方，有的只是bar_format，换句话说就是原作者并没有对这个进行支持，所以无可奈何。除了直接修改tqdm源码，暂时没有想到更简单的办法，有些遗憾。</p>
+<h1 id="结语">结语</h1>
+<p>对于纯python的第三方库，感到极其亲切，不像是底层c语言实现的一些标准库，看到一个空函数，一堆文字描述加上pass，实在是感到沮丧。直接阅读代码比阅读文档的方式可能来得更直接易于理解，仅仅是对于我而已，仅仅限制在对于tqdm库而言。</p>
+<p>通常都是直接找官方文档，阅读源码的方式也不失为一种很好的办法，这种交流更为直接，明晰。</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <meting-js fixed="true" auto="https://music.163.com/#/song?id=1494835439"></meting-js>
+    
+  </body>
+</html>
