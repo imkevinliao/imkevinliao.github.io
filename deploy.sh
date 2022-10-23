@@ -6,7 +6,6 @@ if [ ! -n "$msg" ]; then
     msg="."
 fi
 
-echo "delete old public files:"
 rm -rf public
 
 echo "===master==="
