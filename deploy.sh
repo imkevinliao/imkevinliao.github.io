@@ -11,8 +11,8 @@ hugo  && git add .  && git commit -m "$msg"  && git push
 echo "===master==="
 
 echo "===public==="
-cd public/ git add . && git commit -m "."
-git push origin master:public --force
+cd public/ 
+git add . && git commit -m "." && git push origin master:public --force
 echo "===public==="
 
 # 项目分支：git push -u origin master:master -f
