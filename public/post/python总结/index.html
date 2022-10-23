@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Kevin
+   
+  </title>
+
+ 
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Less is More
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.747c2051c988c578be617a76ccc39f8ccfbe01837a9c2dffa1816ceee36333fa.css"
+    integrity="sha256-dHwgUcmIxXi&#43;YXp2zMOfjM&#43;&#43;AYN6nC3/oYFs7uNjM/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+    integrity="sha256-zITtaDBXzBdd36c46mui1ciCuVy2T1C/m&#43;kYyzeRiHs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/python%E6%80%BB%E7%BB%93/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.413f798d8aa82610bef17a5ca1d7e962ec185be395f1aeb3f45d1891af568b65.js"
+    integrity="sha256-QT95jYqoJhC&#43;8XpcodfpYuwYW&#43;OV8a6z9F0Yka9Wi2U="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.fcf9526f15b3b4e08472de192969ab28a4cdcb32ac94f83e85a8b84e9b45acd2.js"
+      integrity="sha256-/PlSbxWztOCEct4ZKWmrKKTNyzKslPg&#43;hai4TptFrNI="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Python总结"/>
+<meta name="twitter:description" content="序章 今天突然翻看到很早之前做的关于Python的小结，忽然间就很感慨，那段时间写的东西最后都浓缩为短短的几行代码，对于写代码这件事情，早就意识到了。只要一段时间不写，就会变得生疏，所以当时特意留下笔记，方便以后什么时候重新上手的时候可以很快熟悉代码。 大部分是当时写爬虫时候留下的笔记，记得当时还把Java的笔记也整理了一下。"/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Python总结",
+        "headline": "Python总结",
+        "alternativeHeadline": "",
+        "description": "
+      
+        序章 今天突然翻看到很早之前做的关于Python的小结，忽然间就很感慨，那段时间写的东西最后都浓缩为短短的几行代码，对于写代码这件事情，早就意识到了。只要一段时间不写，就会变得生疏，所以当时特意留下笔记，方便以后什么时候重新上手的时候可以很快熟悉代码。 大部分是当时写爬虫时候留下的笔记，记得当时还把Java的笔记也整理了一下。
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/post\/python%E6%80%BB%E7%BB%93\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-11-10T22:03:35.00Z",
+        "datePublished": "2021-11-10T22:03:35.00Z",
+        "dateModified": "2021-11-10T22:03:35.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kevin",
+            "url": "https://example.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/example.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://example.com/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/example.com\/post\/python%E6%80%BB%E7%BB%93\/",
+        "wordCount" : "445",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/connect/"
+              
+              title=""
+              >Connect</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">imkevinliao</a></h3>
+        <div class="description">
+          <p>Less is More</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/imkevinliao/imkevinliao.github.io" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:im.kevinliao@gmail.com" rel="me" aria-label="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  <meting-js auto="https://music.163.com/#/song?id=1494835439"></meting-js>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Python总结</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                2021/11/10
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">3-minute read</span>
+          </div>
+
+        
+      </div><h1 id="序章">序章</h1>
+<p>今天突然翻看到很早之前做的关于Python的小结，忽然间就很感慨，那段时间写的东西最后都浓缩为短短的几行代码，对于写代码这件事情，早就意识到了。只要一段时间不写，就会变得生疏，所以当时特意留下笔记，方便以后什么时候重新上手的时候可以很快熟悉代码。
+大部分是当时写爬虫时候留下的笔记，记得当时还把Java的笔记也整理了一下。</p>
+<hr>
+<h1 id="代理的写法">代理的写法</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">import urllib.request as request
+import requests
+proxies = {
+    &#39;https&#39;: &#39;https://127.0.0.1:10809&#39;,
+    &#39;http&#39;: &#39;http://127.0.0.1:10809&#39;
+}
+headers = {
+    &#39;user-agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#39;
+}
+print(&#39;--------------使用urllib--------------&#39;)
+google_url = &#39;https://www.google.com&#39;
+opener = request.build_opener(request.ProxyHandler(proxies))
+request.install_opener(opener)
+req = request.Request(google_url, headers=headers)
+response = request.urlopen(req)
+print(response.read().decode())
+print(&#39;--------------使用requests--------------&#39;)
+response = requests.get(google_url, proxies=proxies)
+print(response.status_code)
+</code></pre></div><h1 id="正则的使用">正则的使用</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">第一种:
+import re
+m_str=r&#34;http://img.itmtu.com/mm/d/dounianglishi/NO.011/0003.jpg&#34;
+regex=r&#34;(?&lt;=/)\d+&#34;
+result=re.search(regex,m_str).group()
+print(result)
+第二种:
+file= open(r&#39;e:/test.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;)
+content = file.read()
+regex1=&#39;regex1&#39;
+regex2=&#39;regex2&#39;
+m1=re.findall(regex1,content,re.M)
+m2=re.search(regex1,content,re.M)
+reg_content=re.sub(regex1,&#39;&#39;,content)
+reg_content=re.sub(regex2,&#39;&#39;,reg_content)
+print(reg_content)
+if m1:
+    for m in m1:
+        print(m)
+else:
+    print(&#39;No match&#39;)
+</code></pre></div><h1 id="文件流-open">文件流 open</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">f = open(&#34;test.txt&#34;,&#39;a+&#39;,encoding=&#39;utf-8&#39;)
+line = f.readline()
+while line:
+    print (line)
+    line = f.readline()
+f.close()
+补充说明:open方式打开文件最少需要路径一个参数即可.
+</code></pre></div><h1 id="获取for循环中数组序列下标的获取">获取for循环中数组序列下标的获取</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">a=list[&#39;yi&#39;,&#39;er&#39;,&#39;san&#39;,&#39;si&#39;,&#39;wu&#39;]
+for index,var in enumerate(a,1):
+    print(var)
+    print(index)
+补充说明:enumerat(a,1)中的1指的是下标从1开始,不写则默认下标从0开始,index为下标.
+</code></pre></div><h1 id="requests的常用方法">requests的常用方法</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">import requests
+response = requests.get(url, headers=headers, verify=False, proxies=None, timeout=5)
+if response.status_code == 200
+从response获取编码方式并以此解码.
+enconding = requests.utils.get_encodings_from_content(response.text)
+html=response.content.decode(enconding[0])
+补充说明:response.text或response.content.decode(&#39;utf-8&#39;)都可以.
+</code></pre></div><h1 id="lxml">Lxml</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">from lxml import etree,html
+tree=etree.HTML(response.text)
+title=tree.xpath(&#39;//*[@id=&#34;content&#34;]/div/div/div[1]/h3/text()&#39;)
+</code></pre></div><h1 id="beautifulsoup">BeautifulSoup</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">from bs4 import BeautifulSoup
+from lxml import etree
+html=response.text
+soup=BeautifulSoup(html,&#39;lxml&#39;) 
+print(soup.get_text())
+titles=soup.find_all(&#39;h1&#39;,attrs={&#39;class&#39;:&#39;entry-title&#39;})
+text=soup.find(&#39;h1&#39;,attrs={&#39;class&#39;:&#39;entry-title&#39;})
+for title in titles:
+    print(title.get_text())
+</code></pre></div><h1 id="连接数据库-mysql">连接数据库 mysql</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">connect = pymysql.Connect(
+    host=&#39;localhost&#39;,
+    port=3306,
+    user=&#39;root&#39;,
+    passwd=&#39;root&#39;,
+    db=&#39;kevin&#39;,
+    charset=&#39;utf8&#39;
+)
+获取游标
+cursor = connect.cursor()
+插入数据
+sql = &#34;INSERT INTO Test(user_name,user_password,num) VALUES ( &#39;%s&#39;, &#39;%s&#39;, %.2f )&#34;
+item = (&#39;悠然&#39;, &#39;134582345678&#39;, 2000.58)
+cursor.execute(sql % item)
+connect.commit()
+print(&#39;成功插入&#39;, cursor.rowcount, &#39;条数据&#39;)
+修改数据
+sql = &#34;UPDATE Test SET title = &#39;标题&#39; WHERE user_name = &#39;悠然&#39; &#34;
+cursor.execute(sql)
+connect.commit()
+print(&#39;成功修改&#39;, cursor.rowcount, &#39;条数据&#39;)
+查询数据
+sql = &#34;SELECT * FROM Test WHERE user_name=&#39;悠然&#39; &#34;
+cursor.execute(sql)
+for row in cursor.fetchall():
+    print(row)
+print(&#39;共查找出&#39;, cursor.rowcount, &#39;条数据&#39;)
+删除数据
+sql = &#34;DELETE FROM test WHERE user_name=&#39;悠然&#39;&#34;
+cursor.execute(sql)
+connect.commit()
+print(&#39;成功删除&#39;, cursor.rowcount, &#39;条数据&#39;)
+事务处理
+sql_1 = &#34;UPDATE trade SET saving = saving + 1000 WHERE account = &#39;18012345678&#39; &#34;
+sql_2 = &#34;UPDATE trade SET expend = expend + 1000 WHERE account = &#39;18012345678&#39; &#34;
+sql_3 = &#34;UPDATE trade SET income = income + 2000 WHERE account = &#39;18012345678&#39; &#34;
+try:
+    cursor.execute(sql_1)  #储蓄增加1000
+    cursor.execute(sql_2)  #支出增加1000
+    cursor.execute(sql_3)  #收入增加2000
+except Exception as e:
+    connect.rollback()  #事务回滚
+    print(&#39;事务处理失败&#39;, e)
+else:
+    connect.commit()    #事务提交
+    print(&#39;事务处理成功&#39;, cursor.rowcount)
+cursor.close()
+connect.close()
+</code></pre></div><h1 id="selenium">selenium</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">from selenium import webdriver
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException #隐式等待
+from selenium.webdriver.common.action_chains import ActionChains #鼠标点击
+option=webdriver.ChromeOptions()
+option.add_argument(&#39;--disable-infobars&#39;) #禁止显示&#34;Chrome 正在受到自动化软件控制&#34;
+option.add_argument(&#39;user-data-dir=D:\ChromeDown\Temp&#39;) #禁止data参数出现
+option.add_argument(&#39;--start-maximized&#39;) #driver.maximize_window() 效果类似.
+option.binary_location =r&#34;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&#34; #手动指定浏览器位置
+option.add_argument(&#39;user-agent=&#34;MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1&#34;&#39;)
+option.add_argument(&#39;--no-sandbox&#39;) #以最高权限运行
+option.add_argument(&#39;--headless&#39;)   #无头模式
+option.add_argument(&#39;blink-settings=imagesEnabled=false&#39;)  #不加载图片, 提升速度
+option.add_extension(&#39;d:\crx\AdBlock_v2.17.crx&#39;)  #添加crx插件
+option.add_argument(&#34;--disable-javascript&#34;) #禁用JavaScript
+driver=webdriver.Chrome(executable_path=&#39;C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe&#39;)
+driver=webdriver.Chrome(options=option)  # 创建driver
+driver.implicitly_wait(15) #隐式等待(全局)
+driver.get(&#34;https://www.baidu.com&#34;)
+driver.quit(),driver.close()
+简单用法
+driver.find_elements_by_xpath(&#39;//*[@class=&#34;article___1nKEd&#34;]/div[1]/p/img&#39;).get_attribute(&#39;href&#39;)
+title=driver.find_element_by_xpath(&#39;//*[@id=&#34;content&#34;]/div/div/div[1]/h3&#39;).get_attribute(&#39;textContent&#39;)
+content=driver.find_element_by_xpath(&#39;//*[@id=&#34;content&#34;]/div/div/div[2]/div&#39;).text
+driver.find_element_by_xpath(&#39;//*[@id=&#34;masthead&#34;]/div[2]/div/div/div/div[3]/div[2]/button[1]&#39;).click()
+driver.find_element_by_xpath(&#39;//*[@id=&#34;sign-form&#34;]/div/div[2]/div[2]/form/div[1]/label[1]/input&#39;).send_keys(&#39;2552712328@qq.com&#39;)
+until里面是期待出现的条件,最好用try,except. 所有的期待方法都在selenium.webdriver.support.expected_conditions类里
+element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, &#34;myDynamicElement&#34;)) 
+wait = WebDriverWait(driver, 10), element = wait.until(element_has_css_class((By.ID, &#39;myNewInput&#39;), &#34;myCSSClass&#34;))
+wait = WebDriverWait(driver, 10), element = wait.until(EC.element_to_be_clickable((By.ID, &#39;someid&#39;)))
+</code></pre></div><h1 id="log-日志">log 日志</h1>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">import logging
+logging.basicConfig(level = logging.DEBUG,format = &#39;%(asctime)s - %(name)s -%(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s&#39;) 
+filename=r&#39;my.log&#39;
+logging.debug(u&#39;%s&#39;%&#39;ok,debug&#39;)
+logging.info(&#39;提示:&#39;)
+logging.debug(u&#34;调试&#34;)
+logging.info(u&#34;执行打印功能&#34;)
+logging.warning(u&#34;警告&#34;)
+logging.error(u&#34;错误&#34;)
+logging.critical(u&#34;致命错误&#34;)
+</code></pre></div><p>补充说明:logging.basicConfig里面的level设置输出日记等级,logging.NOTSET为全输出,logging.INFO不会输出DEBUG级别的内容.filename='mylog.log'加上这个设置就会输出到文件中.</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2022
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  <meting-js auto="https://music.163.com/#/song?id=1494835439"></meting-js>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
