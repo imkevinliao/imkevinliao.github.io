@@ -6,7 +6,6 @@ if [ ! -n "$msg" ]; then
     msg="."
 fi
 
-# 如果存在public则删除该文件夹
 dir=public
 if [ -d "$dir" ]; then
     rm -rf $dir
