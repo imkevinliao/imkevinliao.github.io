@@ -14,23 +14,21 @@ git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 
 2. 把hugo.exe的文件目录加入到windows系统的环境变量中(由于本人已经不在Windows上操作了，转Linux了，所以如果是windows需要自行下载hugo.exe)
 
-3. 三个脚本 init.sh write.sh deploy.sh (虽然是linux脚本，但是在windows的git bash中同样可以使用[自行下载git]，所以需要用git bash打开终端)
- 
-4. 先对仓库初始化，执行脚本
-```
-./init.sh 
-```
-5. 写文章以及部署
-```
-./write.sh
-./deploy.sh 
-```
+3. 脚本write.sh deploy.sh (虽然是linux脚本，但是在windows的git bash中同样可以使用[自行下载git]，所以需要用git bash打开终端)
+
+
 6. 附录：
+同一个仓库两个分支：master和public
+
+master分支是工程文件，public分支是网站内容。两者的关系如下：master分支使用hugo命令会自动生成public文件夹，将该文件夹的内容作为public分支，这也就是deploy脚本所实现的事情
+
+因为master分支是项目分支，而public分支是hugo生成的，分支没有实际意义，所以直接强推覆盖
+
 需要自行修改脚本中的仓库地址，根据自己的地址配即可，linux下载hugo：[ubuntu] sudo apt install hugo
 
 本地预览命令`hugo server` 
 
-让google收录：https://affectalways.github.io/hugo_seo/  (顺带说一句，百度，搜狗等国内搜索引擎不收录 github page构建的网站不用去折腾，涉及到政治原因，必应可以收录)
+让google收录：https://affectalways.github.io/hugo_seo/  (顺带说一句，百度，搜狗等国内搜索引擎不收录 github page构建的网站，政治原因)
 
 
 # 独立思考 maxims and epigrams
