@@ -12,10 +12,11 @@ master是项目的所有文件，public是hugo生成的用于显示的网站内�
 git clone git@github.com:imkevinliao/imkevinliao.github.io.git
 ```
 
-2. 把hugo.exe的文件目录加入到windows系统的环境变量中(由于本人已经不在Windows上操作了，转Linux了，所以如果是windows需要自行下载hugo.exe)[sudo apt install hugo]
+2. 把hugo.exe的文件目录加入到windows系统的环境变量中(由于本人已经不在Windows上操作了，转Linux了，所以如果是windows需要自行下载hugo.exe)
 
 3. 脚本write.sh deploy.sh (虽然是linux脚本，但是在windows的git bash中同样可以使用[自行下载git]，所以需要用git bash打开终端)
 
+4. 关于 Linux 安装 Hugo [sudo apt install hugo], 旧的发行版上可能是老旧版本的 Hugo. 曲线救国 [sudo apt install snapd] [sudo snap install hugo]
 
 6. 附录：
 同一个仓库两个分支：master和public
