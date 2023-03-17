@@ -1,37 +1,50 @@
 # 博客简介
-这是一个GithubPage + Hugo构成的个人博客，这大概是所有博客的最后归宿，托管在Github上不用费心，省去服务器的费用，维护服务器的费用，而且还有绝对的自主权。
+这是一个 GithubPage + Hugo 构成的个人博客
 
-项目有两个分支：master和public
+## 博客历程：
 
-master是项目的所有文件，public是hugo生成的用于显示的网站内容。可以将master和public分开，作为两个仓库，master作为私有仓库，public作为公开仓库，这样就实现了"分离"
+博客始于 2018，那时候还是 WordPress 时代
+
+从最初的买空间，反复迁移网站，到后来的没有钱
+
+再从最初的买服务器，买域名，搭LNMP环境，部署网站，到后来的没有钱
+
+接着再到 GoogleBlogSpot 托管到后来的自定义网站风格很困难，我不喜欢提供的主题，不够自由
+
+最后的最后，为了自由，改到 Hexo + GithubPage，本以为这是终点，可当文章多了后，发现 Hexo 生成速度太慢
+
+如今 Hugo + GihubPage 便是最后的归处，只是可惜如今有钱了，也有了服务器，只是不愿再部署在服务器上了
+
+## 项目说明：
+本项目有两个分支：master 和 public
+
+master 是 Hugo 工程文件
+
+public 是 Hugo 工程自动生成的静态博客
+
+如果想要私密性：可以将 master 和 public 分开，作为两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"。
 
 # 使用说明
+1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git` 
+2. 写文章 write.sh 输入文章名称即可(不必加.md)
+3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
 
-1. 本地（windows）初始化Git仓库（新建任意空白文件夹）   
-```
-git clone git@github.com:imkevinliao/imkevinliao.github.io.git
-```
+## 其他信息
+关于 Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
 
-2. 把hugo.exe的文件目录加入到windows系统的环境变量中(由于本人已经不在Windows上操作了，转Linux了，所以如果是windows需要自行下载hugo.exe)
+deploy.sh 脚本说明：master 分支是工程文件，public 分支是网站内容。两者的关系如下：master 分支使用 hugo 命令生成 public 文件夹，将该文件夹的内容作为 public 分支。因为 master 分支是工程分支，而 public 分支是 master 分支生成的，没有实际意义，所以直接强推覆盖
 
-3. 脚本write.sh deploy.sh (虽然是linux脚本，但是在windows的git bash中同样可以使用[自行下载git]，所以需要用git bash打开终端)
+本地预览命令 `hugo server` 
 
-4. 关于 Linux 安装 Hugo [sudo apt install hugo], 旧的发行版上可能是老旧版本的 Hugo. 曲线救国 [sudo apt install snapd] [sudo snap install hugo]
+Google 收录：https://affectalways.github.io/hugo_seo/  
 
-6. 附录：
-同一个仓库两个分支：master和public
+By the way：出于政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要尝试使用百度搜索（必应似乎可以）
+## 历史说明
+曾经在 Windows 上使用，如今转到 Linux 了
 
-master分支是工程文件，public分支是网站内容。两者的关系如下：master分支使用hugo命令会自动生成public文件夹，将该文件夹的内容作为public分支，这也就是deploy脚本所实现的事情
+windows 需要自行下载 hugo.exe, 把 hugo.exe 的文件目录加入到 windows 系统的环境变量中
 
-因为master分支是项目分支，而public分支是hugo生成的，分支没有实际意义，所以直接强推覆盖
-
-需要自行修改脚本中的仓库地址，根据自己的地址配即可，linux下载hugo：[ubuntu] sudo apt install hugo
-
-本地预览命令`hugo server` 
-
-让google收录：https://affectalways.github.io/hugo_seo/  (顺带说一句，百度，搜狗等国内搜索引擎不收录 github page构建的网站，政治原因)
-
-
+write.sh deploy.sh (虽然是 linux 脚本，但是 windows 使用 git bash 同样可以使用)
 # 独立思考
 
 > 是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法
