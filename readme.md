@@ -1,7 +1,4 @@
-# 博客简介
-这是一个 GithubPage + Hugo 构成的个人博客
-
-## 博客历程：
+# 博客历程：
 
 博客始于 2018，那时候还是 WordPress 时代
 
@@ -15,7 +12,7 @@
 
 如今 Hugo + GihubPage 便是最后的归处，只是可惜如今有钱了，也有了服务器，只是不愿再部署在服务器上了
 
-## 项目说明：
+# 项目说明：
 本项目有两个分支：master 和 public
 
 master 是 Hugo 工程文件
@@ -29,7 +26,7 @@ public 是 Hugo 工程自动生成的静态博客
 2. 写文章 write.sh 输入文章名称即可(不必加.md)
 3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
 
-## 其他信息
+# 其他信息
 关于 Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
 
 deploy.sh 脚本说明：master 分支是工程文件，public 分支是网站内容。两者的关系如下：master 分支使用 hugo 命令生成 public 文件夹，将该文件夹的内容作为 public 分支。因为 master 分支是工程分支，而 public 分支是 master 分支生成的，没有实际意义，所以直接强推覆盖
@@ -39,7 +36,7 @@ deploy.sh 脚本说明：master 分支是工程文件，public 分支是网站�
 Google 收录：https://affectalways.github.io/hugo_seo/  
 
 By the way：出于政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要尝试使用百度搜索（必应似乎可以）
-## 历史说明
+# 历史说明
 曾经在 Windows 上使用，如今转到 Linux 了
 
 windows 需要自行下载 hugo.exe, 把 hugo.exe 的文件目录加入到 windows 系统的环境变量中
