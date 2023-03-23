@@ -19,10 +19,3 @@ echo "===public==="
 cd public/ && git init && git remote add origin git@github.com:imkevinliao/imkevinliao.github.io.git
 git add . && git commit -m "." && git push origin master:public --force
 echo "===public==="
-
-
-# The file will have its original line endings in your working directory
-# git config --global core.safecrlf true
-
-# fatal: LF would be replaced by CRLF
-# git config --global core.autocrlf false
