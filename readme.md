@@ -1,9 +1,4 @@
-# 使用说明
-1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git` 
-2. 写文章 write.sh 输入文章名称即可(不必加.md)
-3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
-
-自行部署需要修改 deploy.sh 为自己的仓库，挑选合适自己的 Hugo 主题（好的主题，非常重要），祝每个人都能拥有属于自己的 website，博客永不落幕。
+# 简介
 
 本项目有两个分支：master 和 public
 
@@ -11,31 +6,23 @@ master 是 Hugo 工程文件
 
 public 是 Hugo 工程自动生成的静态博客
 
-如果想要私密性：可以将 master 和 public 分开，作为两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"。
+自行部署需要修改 deploy.sh 为自己的仓库，并挑选自己喜欢的 Hugo 主题（好的主题，非常重要），博客永不落幕。 如果想要私密性：可以将 master 和 public 分开，创建两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"。
 
-deploy.sh 脚本做的就是先删除 master 分支的 public 文件夹，然后使用 hugo 命令生成新的 public，并进入到该文件夹下，强推覆盖 public 分支。
+1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git` 
+2. 写文章 write.sh 输入文章名称即可(不必加.md)
+3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
+
 # 其他信息
-关于 Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
+Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
 
 本地预览命令 `hugo server` 
 
 Google 收录：https://affectalways.github.io/hugo_seo/  
 
 By the way：政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要尝试使用百度搜索（必应似乎可以）
-# 历史说明
-曾经在 Windows 上使用，如今转到 Linux 了
 
-windows 需要自行下载 hugo.exe, 把 hugo.exe 的文件目录加入到 windows 系统的环境变量中
-
-write.sh deploy.sh (虽然是 linux 脚本，但是 windows 使用 git bash 同样可以使用)
-# 博客历程
-
-博客始于 2018，那时候还是 WordPress 时代，从最开始的买空间域名，到后来的买主机自己搭建LNMP环境
-
-再到 GoogleBlogSpot(自由程度低放弃) Hexo + GithubPage(生成速度慢放弃)
-
-最后才有了今天的 Hugo + GithubPage
 # 独立思考
+- <https://github.com/The-Run-Philosophy-Organization/run>
 
 > 是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法
 > 生存…… 这根本不是互联网，不是为我服务的互联网，而是在消费我的互联网，是让我变傻变笨的互联网…… 我不能忍，因为它影响到了我的生存……
