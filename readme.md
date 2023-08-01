@@ -6,7 +6,7 @@ master 是 Hugo 项目文件
 
 public 是 Hugo 根据项目文件生成的静态博客
 
-自行部署需要修改 deploy.sh 为自己的仓库，并挑选自己喜欢的 Hugo 主题（好的主题，非常重要），博客永不落幕。 如果想要私密性：可以将 master 和 public 分开，创建两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"。
+自行部署需要修改 deploy.sh 为自己的仓库，并挑选自己喜欢的 Hugo 主题（好的主题，非常重要），博客永不落幕。 如果想要私密性：可以将 master 和 public 分开，创建两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"，个人没有这类需求，为了方便，就放在一个仓库了。
 
 github page 选择 public 分支
 
