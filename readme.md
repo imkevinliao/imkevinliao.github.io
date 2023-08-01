@@ -8,6 +8,8 @@ public 是 Hugo 根据项目文件生成的静态博客
 
 自行部署需要修改 deploy.sh 为自己的仓库，并挑选自己喜欢的 Hugo 主题（好的主题，非常重要），博客永不落幕。 如果想要私密性：可以将 master 和 public 分开，创建两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"。
 
+github page 选择 public 分支
+
 1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git` 
 2. 写文章 write.sh 输入文章名称即可(不必加.md)
 3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
