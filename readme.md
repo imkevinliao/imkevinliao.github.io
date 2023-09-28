@@ -10,9 +10,11 @@ public 是 Hugo 根据项目文件生成的静态博客
 
 github page 选择 public 分支
 
-1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git` 
-2. 写文章 write.sh 输入文章名称即可(不必加.md)
-3. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
+1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
+2. 安装 `sudo apt install hugo`
+3. 配置 git 用户名和邮箱 `git config --global user.name imkevinliao`, `git config --global user.email xxx@xxx`
+4. 写文章 write.sh 输入文章名称即可(不必加.md)
+5. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
 
 # 其他信息
 Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
