@@ -31,7 +31,8 @@ sudo vim /etc/samba/smb.conf
     valid users = kevin
 
 [global]
-smb ports = 1314 1315
+    sam ports = 1314 1315 445
+    security = user
 ```
 
 ```
@@ -58,8 +59,15 @@ valid users 当public=no时候，就应该有valid users，表示只允许某个
 
 only guest = yes 则表示仅以匿名用户登录
 
+[global] 部分可以不配置，samba默认端口是445，这里是自定义其他端口，防止某些运营商封禁了默认的445端口
 # 附录
-删除用户命令:`sudo userdel -r kevin`
+删除用户命令: `sudo userdel -r kevin`
+
+请在root用户下执行：
+
+查看samba用户命令: `pdbedit -L`
+
+修改samba用户密码: `smbpasswd kevin` 
 
 # small talk
 
