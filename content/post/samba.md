@@ -19,16 +19,19 @@ sudo smbpasswd -a kevin
 ```
 sudo vim /etc/samba/smb.conf
 
-写入下列配置
+文件末尾写入下列配置
 
 [kevin]
     path = /home/kevin
     browseable = yes
     writeable = yes
+    available = yes
     create mask = 0644
-    directory = 0700
     public = no
     valid users = kevin
+
+[global]
+smb ports = 1314 1315
 ```
 
 ```
