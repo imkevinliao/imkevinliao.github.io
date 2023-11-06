@@ -26,8 +26,6 @@ Google 收录：https://affectalways.github.io/hugo_seo/
 政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要浪费时间尝试使用百度搜索（必应似乎可以）
 
 # 独立思考
-- <https://github.com/The-Run-Philosophy-Organization/run> [润学]
-
 > 我们想要的不是谋生，而是生活
 
 > 是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法
