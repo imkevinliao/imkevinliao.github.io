@@ -2,11 +2,11 @@
 
 本项目有两个分支：master 和 public
 
-master 是 Hugo 项目文件
+master 是 Hugo 项目文件；public 是 Hugo 根据项目文件生成的静态博客
 
-public 是 Hugo 根据项目文件生成的静态博客
+理论上可以将 master 和 public 分开，创建两个仓库。
 
-自行部署需要修改 deploy.sh 为自己的仓库，并挑选自己喜欢的 Hugo 主题（好的主题，非常重要），博客永不落幕。 如果想要私密性：可以将 master 和 public 分开，创建两个仓库。master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"，个人没有这类需求，为了方便，就放在一个仓库了。
+master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"，个人没有这类需求，为了方便，就放在一个仓库了。
 
 github page 选择 public 分支
 
@@ -23,10 +23,10 @@ Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版�
 
 Google 收录：https://affectalways.github.io/hugo_seo/  
 
-By the way：政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要尝试使用百度搜索（必应似乎可以）
+政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要浪费时间尝试使用百度搜索（必应似乎可以）
 
 # 独立思考
-- <https://github.com/The-Run-Philosophy-Organization/run>[润学]
+- <https://github.com/The-Run-Philosophy-Organization/run> [润学]
 
 > 我们想要的不是谋生，而是生活
 
@@ -40,7 +40,7 @@ By the way：政治原因，国内搜索引擎不收录 Github Page 构建的网
 
 > 我们离ICU，真的就只有“再加一次班”的距离   
 > 世上只有一种成功，就是用你喜欢的方式度过一生   
-> 总有一天，你会知道没有一份工作值得8小时以上的拼命。没有哪一份工作，值得你以命相搏     
+> 总有一天，你会知道没有一份工作值得 8 小时以上的拼命。没有哪一份工作，值得你以命相搏     
 
 > 行香子·过七里濑    
 > 苏轼 〔宋代〕       
