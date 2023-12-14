@@ -1,30 +1,24 @@
 # 简介
+master 分支是 Hugo 项目文件
+public 分支是 Hugo 根据项目文件生成的静态博客
 
-本项目有两个分支：master 和 public
+如存在保密需要可以使用私有仓库存放项目文件，公开仓库存放生成的静态博客
 
-master 是 Hugo 项目文件；public 是 Hugo 根据项目文件生成的静态博客
-
-理论上可以将 master 和 public 分开，创建两个仓库。
-
-master 作为私有仓库，public 作为公开仓库，这样就实现了"分离"，个人没有这类需求，为了方便，就放在一个仓库了。
-
-github page 选择 public 分支
+Github Page 选择静态博客 public 的分支
 
 1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
 2. 安装 `sudo apt install hugo`
 3. 配置 git 用户名和邮箱 `git config --global user.name imkevinliao`, `git config --global user.email xxx@xxx`
-4. 写文章 write.sh 输入文章名称即可(不必加.md)
-5. 部署文章 deploy.sh 输入提交信息，如果不想写直接回车即可，脚本默认会给"."
-
-# 其他信息
-Linux 安装 Hugo `sudo apt install hugo`, 旧的发行版上可能是老旧版本的 Hugo. 可以曲线救国(先卸载旧的 hugo) `sudo apt install snapd` `sudo snap install hugo`
-
-本地预览命令 `hugo server` 
-
+4. 写文章 write.sh 输入文章名
+5. 部署文章 deploy.sh 输入提交信息或者直接回车
+```
+sudo apt install hugo
+旧Linux发行版安装Hugo存在问题，曲线救国：
+sudo apt install snapd
+sudo snap install hugo
+本地预览命令 hugo server
 Google 收录：https://affectalways.github.io/hugo_seo/  
-
-政治原因，国内搜索引擎不收录 Github Page 构建的网站，请不要浪费时间尝试使用百度搜索（必应似乎可以）
-
+```
 # 独立思考
 > 我们想要的不是谋生，而是生活
 
