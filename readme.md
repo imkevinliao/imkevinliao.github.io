@@ -8,7 +8,7 @@ Github Page 选择静态博客 public 的分支
 
 1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
 2. 安装 `sudo apt install hugo`
-3. 配置 git 用户名和邮箱 `git config --global user.name imkevinliao`, `git config --global user.email xxx@xxx`
+3. 配置 git 用户名和邮箱 `git config --global user.name xxx`, `git config --global user.email xxx@xxx`
 4. 写文章 write.sh 输入文章名
 5. 部署文章 deploy.sh 输入提交信息或者直接回车
 ```
