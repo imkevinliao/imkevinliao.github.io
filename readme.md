@@ -1,24 +1,16 @@
 # 简介
 master 分支是 Hugo 项目文件
+
 public 分支是 Hugo 根据项目文件生成的静态博客
 
-如存在保密需要可以使用私有仓库存放项目文件，公开仓库存放生成的静态博客
+Github Page 选择静态博客 public 的分支 （可根据需要分仓 项目（private）/博客（public））
 
-Github Page 选择静态博客 public 的分支
+1. `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
+2. `sudo apt install hugo` [sudo apt install snapd  sudo snap install hugo ]
+3. `git config --global user.name xxx`, `git config --global user.email xxx@xxx`
+4. write.sh
+5. deploy.sh
 
-1. 克隆代码 `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
-2. 安装 `sudo apt install hugo`
-3. 配置 git 用户名和邮箱 `git config --global user.name xxx`, `git config --global user.email xxx@xxx`
-4. 写文章 write.sh 输入文章名
-5. 部署文章 deploy.sh 输入提交信息或者直接回车
-```
-sudo apt install hugo
-旧Linux发行版安装Hugo存在问题，曲线救国：
-sudo apt install snapd
-sudo snap install hugo
-本地预览命令 hugo server
-Google 收录：https://affectalways.github.io/hugo_seo/  
-```
 # 思考
 > 我们想要的不是谋生，而是生活
 
