@@ -6,7 +6,7 @@ public 分支是 Hugo 根据项目文件生成的静态博客
 Github Page 选择静态博客 public 的分支 （可根据需要分仓 项目（private）/博客（public））
 
 1. `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
-2. `sudo apt install hugo` [sudo apt install snapd  sudo snap install hugo ]
+2. `sudo apt install hugo` [sudo apt install snapd  && sudo snap install hugo ]
 3. `git config --global user.name xxx`, `git config --global user.email xxx@xxx`
 4. write.sh
 5. deploy.sh
