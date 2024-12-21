@@ -34,9 +34,9 @@
 </footer>
 {{- partial "medium-zoom.html" .context -}}
 {{- partial "math.html" .context -}}
-{{- template "_internal/google_analytics_async.html" .context -}}
+{{ template "_internal/google_analytics.html" . }}
 {{- if and (hugo.IsProduction) (.context.Site.Params.gtagId) -}}
-  {{ partial "google-analytics-gtag-async.html" .context }}
+{{ template "_internal/google_analytics.html" . }}
 
 
 {{- end -}}
