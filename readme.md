@@ -1,19 +1,7 @@
-# 先导
+# 离歌
 代码终究不是归途，一别两宽，各生欢喜
-# 简介
-master 分支是 Hugo 项目文件
 
-public 分支是 Hugo 根据项目文件生成的静态博客
-
-Github Page 选择静态博客 public 的分支 （可根据需要分仓 项目（private）/博客（public））
-
-1. `git clone git@github.com:imkevinliao/imkevinliao.github.io.git`
-2. `sudo apt install hugo` [sudo apt install snapd  && sudo snap install hugo ]
-3. `git config --global user.name xxx`, `git config --global user.email xxx@xxx`
-4. write.sh
-5. deploy.sh
-
-# 思考
+# 低语
 > 我们想要的不是谋生，而是生活
 
 > 是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法
