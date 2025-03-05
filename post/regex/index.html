@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Kevin
+   
+  </title>
+
+ 
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Less is More
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.51423ad97099a08f3a20e16d238c13adae76db7dd5e1913789bdc81143ff4cc6.css"
+    integrity="sha256-UUI62XCZoI86IOFtI4wTra52233V4ZE3ib3IEUP/TMY="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+    integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/regex/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.ea8ebe268922ef9849261a1312cd65b640595e65251ce4c00534a176afd1ac0c.js"
+      integrity="sha256-6o6&#43;Joki75hJJhoTEs1ltkBZXmUlHOTABTShdq/RrAw="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://example.com/images/site-feature-image.png">
+  <meta name="twitter:title" content="regex">
+  <meta name="twitter:description" content="Less is More">
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "regex",
+        "headline": "regex",
+        "alternativeHeadline": "",
+        "description": "
+      
+        
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/post\/regex\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-06-13T16:51:37.00Z",
+        "datePublished": "2022-06-13T16:51:37.00Z",
+        "dateModified": "2022-06-13T16:51:37.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kevin",
+            "url": "https://example.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/example.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://example.com/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/example.com\/post\/regex\/",
+        "wordCount" : "168",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/connect/"
+              
+              title=""
+              >Connect</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    
+    
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Kevin</a></h3>
+        <div class="description">
+          <p>Less is More</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/imkevinliao/imkevinliao.github.io" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:im.kevinliao@gmail.com" rel="me" aria-label="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2025
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.44288fd315b6cda68c1f4743caad56535c0f81a5b5a672f385e82b3896575c1d.js"
+    integrity="sha256-RCiP0xW2zaaMH0dDyq1WU1wPgaW1pnLzhegrOJZXXB0="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>regex</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                2022/06/13
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">One-minute read</span>
+          </div>
+
+        
+      </div><h1 id="正则">正则</h1>
+<p>正则的概念是很早很早以前就接触过的，但是并没有实际使用。记忆中开始实际使用的时候，似乎是我开始写java的时候。至于为什么使用正则，真的是忘了，但是我清楚的记得当时有一个东西无法匹配，我折腾了很久也无可奈何，最后还是找大佬指点了一下，我才豁然开朗。至此，我记住了全部匹配的\s\S，也是从那个时候开始正式接触正则的概念：零宽断言。我当时兴致勃勃的要深入理解正则表达式，达到随意写的状态，但是大佬一句话，正则表达式用的时候网上搜一下就行，没必要记。毕竟，你要匹配的很多网上的表达式写的都很好了，自己写还烂。</p>
+<p>如今回看当初，只觉得好笑。初见正则，很多东西都搞不清楚，如search，findall，断言，匹配开头，匹配结尾，贪婪模式，非贪婪模式，匹配次数。大概是没有老师指点吧，现在回看觉得简单的东西，当时却折腾了很久，以至于当时气馁的感觉至今仍然能有些许感受。</p>
+<p>人生不也是如此吗？在人生的某个节点上，我们感到无比痛苦，我们感到无可奈何，我们对自己无能而产生愤怒，产生痛苦。在那个时刻，我们备受煎熬，可，一旦往事随风后，再回头看，似乎也没什么大不了，不就是&hellip;&hellip;</p>
+<h1 id="反复温习">反复温习</h1>
+<p>正则表达式一段时间不使用后，就容易被遗忘。所以谨以这短短的几行文字做记录，以便后续快速回忆。</p>
+<h2 id="参考链接">参考链接：</h2>
+<p><a href="https://www.jb51.net/tools/regex.htm">https://www.jb51.net/tools/regex.htm</a><br>
+<a href="https://www.runoob.com/w3cnote/reg-lookahead-lookbehind.html">https://www.runoob.com/w3cnote/reg-lookahead-lookbehind.html</a></p>
+<h2 id="python代码">Python代码</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python3" data-lang="Python3"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">regular_assertion</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m_str</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;regex represents regular expression&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;match str：</span><span class="si">{</span><span class="n">m_str</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">m_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 正向先行断言 负向先行断言 正向后行断言 负向后行断言</span>
+</span></span><span class="line"><span class="cl">    <span class="n">reg</span> <span class="o">=</span> <span class="p">[</span><span class="sa">r</span><span class="s1">&#39;re(?=gular)&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;re(?!g)&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;(?&lt;=\w)re&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;(?&lt;!\w)re&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">匹配规则：</span><span class="si">{</span><span class="n">reg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">reg</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">m_str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;匹配结果:&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">_</span><span class="o">.</span><span class="n">group</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;; &#39;</span>  
+</span></span></code></pre></div><p>打印结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">match str：regex represents regular expression
+</span></span><span class="line"><span class="cl">0r 1e 2g 3e 4x 5  6r 7e 8p 9r 10e 11s 12e 13n 14t 15s 16  17r 18e 19g 20u 21l 22a 23r 24  25e 26x 27p 28r 29e 30s 31s 32i 33o 34n 
+</span></span><span class="line"><span class="cl">匹配规则：re(?=gular)
+</span></span><span class="line"><span class="cl">匹配结果:
+</span></span><span class="line"><span class="cl">&lt;re.Match object; span=(17, 19), match=&#39;re&#39;&gt; re; 
+</span></span><span class="line"><span class="cl">匹配规则：re(?!g)
+</span></span><span class="line"><span class="cl">匹配结果:
+</span></span><span class="line"><span class="cl">&lt;re.Match object; span=(6, 8), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(9, 11), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(28, 30), match=&#39;re&#39;&gt; re; 
+</span></span><span class="line"><span class="cl">匹配规则：(?&lt;=\w)re
+</span></span><span class="line"><span class="cl">匹配结果:
+</span></span><span class="line"><span class="cl">&lt;re.Match object; span=(9, 11), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(28, 30), match=&#39;re&#39;&gt; re; 
+</span></span><span class="line"><span class="cl">匹配规则：(?&lt;!\w)re
+</span></span><span class="line"><span class="cl">匹配结果:
+</span></span><span class="line"><span class="cl">&lt;re.Match object; span=(0, 2), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(6, 8), match=&#39;re&#39;&gt; re; &lt;re.Match object; span=(17, 19), match=&#39;re&#39;&gt; re; 
+</span></span></code></pre></div><h1 id="结语">结语</h1>
+<p>子曰，温故而知新，诚不欺我</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2025
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.44288fd315b6cda68c1f4743caad56535c0f81a5b5a672f385e82b3896575c1d.js"
+    integrity="sha256-RCiP0xW2zaaMH0dDyq1WU1wPgaW1pnLzhegrOJZXXB0="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
