@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Kevin
+   
+  </title>
+
+ 
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Less is More
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.51423ad97099a08f3a20e16d238c13adae76db7dd5e1913789bdc81143ff4cc6.css"
+    integrity="sha256-UUI62XCZoI86IOFtI4wTra52233V4ZE3ib3IEUP/TMY="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+    integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/post/docker%E6%B5%85%E8%AE%B0/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.ea8ebe268922ef9849261a1312cd65b640595e65251ce4c00534a176afd1ac0c.js"
+      integrity="sha256-6o6&#43;Joki75hJJhoTEs1ltkBZXmUlHOTABTShdq/RrAw="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://example.com/images/site-feature-image.png">
+  <meta name="twitter:title" content="Docker浅记">
+  <meta name="twitter:description" content="Less is More">
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Docker浅记",
+        "headline": "Docker浅记",
+        "alternativeHeadline": "",
+        "description": "
+      
+        
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/post\/docker%E6%B5%85%E8%AE%B0\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kevin"
+        },
+        "copyrightYear" : "2025",
+        "dateCreated": "2025-02-14T14:20:12.00Z",
+        "datePublished": "2025-02-14T14:20:12.00Z",
+        "dateModified": "2025-02-14T14:20:12.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kevin",
+            "url": "https://example.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/example.com\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://example.com/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/example.com\/post\/docker%E6%B5%85%E8%AE%B0\/",
+        "wordCount" : "207",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Posts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/connect/"
+              
+              title=""
+              >Connect</a
+            >
+          </li>
+
+        
+        
+      </div>
+      <li>
+        
+          <a class="theme-switch" title="Switch Theme">
+            <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+          </a>
+
+        
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    
+    
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Kevin</a></h3>
+        <div class="description">
+          <p>Less is More</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://github.com/imkevinliao/imkevinliao.github.io" rel="me" aria-label="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:im.kevinliao@gmail.com" rel="me" aria-label="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2025
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.44288fd315b6cda68c1f4743caad56535c0f81a5b5a672f385e82b3896575c1d.js"
+    integrity="sha256-RCiP0xW2zaaMH0dDyq1WU1wPgaW1pnLzhegrOJZXXB0="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Docker浅记</h1>
+        
+          <div class="info">
+            <em class="fas fa-calendar-day"></em>
+            <span class="date"
+              >
+                2025/02/14
+
+
+              </span
+            >
+            <em class="fas fa-stopwatch"></em>
+            <span class="reading-time">One-minute read</span>
+          </div>
+
+        
+      </div><h1 id="docker">Docker</h1>
+<p>很早以前就听过 docker 的大名，那时候未曾深入了解，给人的印象就是一个迷你虚拟机罢了。VMWare 已经足够好用了，只是有些笨重。</p>
+<p>开发者最头疼的环境问题，每一次配置，都感觉是对生命的浪费。</p>
+<h1 id="初识">初识</h1>
+<p>一开始认识其实是从 docker-compose 开始的，而非 docker。是为了部署阅读的服务器版本，从 docker-compose 开始认识到容器的组合，
+不过很快就被 yml 文件打败了。不是被格式（尽管我不太喜欢 yml），而是被 docker 版本不同，语法不一致的问题搞得很头大。</p>
+<p>在我看来，如果是大的版本更新，要么像 Python2 和 Python3 一样直接不兼容，要么就必须向下兼容（代码上做冗余处理）。</p>
+<p>这算是一个不太好的开始。靡不有初，鲜克有终，会一语成谶吗？</p>
+<h1 id="相知">相知</h1>
+<p>真正令人惊叹的是使用起来如此的简单，快捷，方便。使用 Linux 也这么多年了，为数不多几次惊艳。</p>
+<p>一次是 Kali Linux 五花八门的渗透测试工具，小小的满足了年少的黑客梦，只不过很快就碎了一地。</p>
+<p>一次是在 Ubuntu 里使用 VSCode，直接命令行 code 启动， 实在是太优雅了。</p>
+<p>相比于 docker 听到更多的是 k8s，可是那是企业级应用和个人开发者基本没有关系。</p>
+<p>痴迷于其简单的使用，于是开始尝试自己编写 Dockerfile，谁能想象一个连 docker ps -a 命令都不知道的人，就这么大张旗鼓开始写 Dockerfile 了呢？
+第一次写 Dockerfile 可是吃进了苦头，对于开发者来说 build start stop rm 频繁修改构建，真的让人抓狂，而这仅仅只是个开始。几乎无一例外，
+随便找一个 Dockerfile，大概率会看到 alpine 这个字样。作为 Ubuntu 的坚定支持者（Debian），不喜欢 CentOS。</p>
+<p>作为一个新手自然入乡随俗，使用 alpine，也接受了 apk 而不是 apt。事实证明，alpine 并不好用，因为连一个简单的设置时区都需要额外安装包。
+即便如此，也算是忍了，毕竟大家都这么用。直到有一次，发现 sh 和 bash 在语法上还是有区别的，在写 shell 脚本时候并未注意，调试时候才发现的，
+不知怎地，突然就破防了。这 TMD 破系统。</p>
+<p>后来因为喜欢玩三国杀，发现了无名杀(noname)。自从入门 docker 后，通常都直奔仓库的 Dockerfile，按照官方的构建后发现问题很大，build 实在是
+太大了，因为 npm （一堆屎一样的依赖），而且无法满足特定需求，这怎么能接受呢？于是乎就直接使用 Dockerfile 使用 Python Web 服务构建。</p>
+<p>为了解决构建的镜像过大的问题，逐渐学会了使用轻量级系统（ubuntu slim），RUN 命令合并减少层数，了解到使用多阶段构建的 builder 并不会进入镜像，
+避免了担心 builder 过程准备的开发工具也进入镜像增大体积。</p>
+<h1 id="相熟">相熟</h1>
+<p>在尝试了多个 Dockerfile 构建后，其实也并非什么难事，不过却有了更深刻的认识。</p>
+<p>在尝试构建 Python 程序时候，发现了一个奇怪的库 opencc 居然需要使用 cmake 构建。一直以来，都认为 pip install xxx，和 c 没什么关系。
+原来有些也是需要 cmake 构建，以前无论是 windows 和 mac 甚至 linux 也从未出现过，直到使用镜像才发现原来要安装这些额外的工具！</p>
+<p>在 web 服务器选择上，一直都是 nginx，以前也听过 caddy，但是听了这么多年也没用，直到发现 caddy 可以自动申请证书（太好了）。虽然，直接使用
+acme.sh 申请也并不麻烦，几行命令就能搞定，但是 caddy 可以更懒，为何不用呢？</p>
+<p>docker 直接部署 caddy 简直不要太方便了。折腾了很久，才发现 caddy 依赖于主机 80，443 端口，自行申请证书，这点反复测试了多次，才意识到。
+一直依赖都喜欢用主机的其他端口映射，所以启动 caddy 也是使用的其他端口映射到 caddy 的 80 443，谁曾想这竟然是个问题。</p>
+<h1 id="厌倦">厌倦</h1>
+<p>对于使用者来说，它足够方便。 对于开发者来说，调试实在是有些头疼。</p>
+<p>随随便便弄点什么东西，它就很大。 资源管理，监控和日志都不太好用。</p>
+<p>有些服务不太适合使用 docker 部署，宿主机更合适。</p>
+<p>大概是万物皆可 docker，疯狂之后的平静，它没想象中那么好，它也没那么差。</p>
+<h1 id="平淡">平淡</h1>
+<p>一如既往，喜欢在很多星的项目中找 Dockerfile，保持随时编写 Dockerfile 的能力。</p>
+<p>docker 的最大意义，就是将使用成本几乎降到了零，当一件事情的成本足够低廉，那么它存活的时间就可以很长。</p>
+<p>人生还有如此多的时间，倒也不必急于一时。</p>
+<p><code>幽香浅浅湿未透。 认雪底、思来始有。 翦裁尚觉琼瑶皱。 苦寒中、越恁骨清肌瘦。 东风气象园林旧。 又去年、而今时候。 急宜小摘当尊酒。 选一枝、且付玉人纤手。</code></p>
+<h1 id="docker-1">docker</h1>
+<p>docker ps -a</p>
+<p>docker exec -it sh</p>
+<p>docker exec -it sh &ldquo;cat /var/error.log&rdquo;</p>
+<p>docker buildx build &ndash;platform linux/amd64,linux/arm64 xxx</p>
+<p>docker images</p>
+<p>docker network create my-network</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          2020-2025
+
+        
+      </li>
+      
+        <li class="footer__item">
+          <a
+            href="/imprint/"
+            
+            title=""
+          >
+            imprint
+          </a>
+        </li>
+
+      
+    </ul>
+  </div>
+
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.44288fd315b6cda68c1f4743caad56535c0f81a5b5a672f385e82b3896575c1d.js"
+    integrity="sha256-RCiP0xW2zaaMH0dDyq1WU1wPgaW1pnLzhegrOJZXXB0="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
